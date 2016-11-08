@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="PROFILE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/myWhite" />
+
+            <RelativeLayout
+                android:id="@+id/layout_navigation"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <com.balysv.materialmenu.MaterialMenuView
+                    android:id="@+id/action_bar_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:mm_color="@android:color/white" />
+
+
+            </RelativeLayout>
+
+            <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/icon_logout"
+                android:id="@+id/textView_logout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dip"
+                android:textColor="@color/myWhite"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout3"
+            android:background="@color/myWhite"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="OR"
+                android:id="@+id/textView19"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/mytextblack" />
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/textView19"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@color/myash"
+                android:id="@+id/relativeLayout19">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText_memberid"
+                    android:background="@color/myash"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Membership No"
+                    android:layout_marginLeft="5dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dip"
+                android:layout_height="50dip"
+                android:layout_below="@+id/textView19"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relativeLayout18">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText_nic"
+                    android:background="@color/myash"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="NIC No"
+                    android:layout_marginLeft="5dip" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="300dip"
+                android:layout_height="50dip"
+                android:text="LOGIN"
+                android:id="@+id/btnLogin"
+                android:layout_below="@+id/relativeLayout18"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dip"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/relativeLayout19">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_lock"
+                    android:id="@+id/textView20"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="100sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/layout_details"
+            android:visibility="visible"
+            android:background="@color/myWhite">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:background="#FFFFFF">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dip"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/relativeLayout277">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:civ_border_color="@color/colorPrimary"
+                                app:civ_border_width="4dp"
+                                app:civ_shadow="true"
+                                android:id="@+id/imageView_comm_profile"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dip"
+                                android:src="@drawable/user" />
+
+
+                        </RelativeLayout>
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout277"
+                            android:id="@+id/relativeLayout27"
+                            android:layout_marginTop="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout20">
+
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/icon_name"
+                                    android:id="@+id/textView21"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+                            </RelativeLayout>
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_name"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout20"
+                                android:layout_toEndOf="@+id/relativeLayout20" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout27"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/relativeLayout28"
+                            android:layout_marginTop="10dip">
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout41">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_membershipno"
+                                    android:id="@+id/textView22"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                            </RelativeLayout>
+
+
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_id"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout41"
+                                android:layout_toEndOf="@+id/relativeLayout41" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout28"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/relativeLayout29"
+                            android:layout_marginTop="10dip">
+
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout42">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_nic"
+                                    android:id="@+id/textView23"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                            </RelativeLayout>
+
+
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_nic"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout42"
+                                android:layout_toEndOf="@+id/relativeLayout42" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout29"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/relativeLayout30"
+                            android:layout_marginTop="10dip">
+
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout43">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_vanue"
+                                    android:id="@+id/textView24"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                            </RelativeLayout>
+
+
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_address"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout43"
+                                android:layout_toEndOf="@+id/relativeLayout43" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout30"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/relativeLayout31"
+                            android:layout_marginTop="10dip">
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout44">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_landphoe"
+                                    android:id="@+id/textView25"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                            </RelativeLayout>
+
+
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_landphone"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout44"
+                                android:layout_toEndOf="@+id/relativeLayout44" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relativeLayout32"
+                            android:layout_below="@+id/relativeLayout31"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dip">
+
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout45">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_moble"
+                                    android:id="@+id/textView26"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                            </RelativeLayout>
+
+
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_phone"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout45"
+                                android:layout_toEndOf="@+id/relativeLayout45" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/relativeLayout33"
+                            android:layout_below="@+id/relativeLayout32"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dip">
+
+                            <RelativeLayout
+                                android:layout_width="70dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout46">
+
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_email"
+                                    android:id="@+id/textView27"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50sp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                            </RelativeLayout>
+
+
+
+                            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_pro_email"
+                                android:textColor="@color/mytextblack"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout46"
+                                android:layout_toEndOf="@+id/relativeLayout46" />
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawer"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Relative_TitleBar"
+        android:layout_gravity="start"
+        android:background="#cc3F51B5"
+        android:clickable="false">
+
+
+
+        <ListView
+            android:id="@+id/listView_navigation"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout6"
+            android:layout_centerHorizontal="true"
+            android:divider="@color/myBlue" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
+

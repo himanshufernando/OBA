@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark">
+
+            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/layout_navigation"
+                android:layout_toRightOf="@+id/layout_navigation"
+                android:text="EVENT"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/myWhite" />
+
+            <RelativeLayout
+                android:id="@+id/layout_navigation"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <com.balysv.materialmenu.MaterialMenuView
+                    android:id="@+id/action_bar_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:mm_color="@android:color/white" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/relative_event_map">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_vanue"
+                    android:id="@+id/textView_location"
+                    android:textColor="@color/myWhite"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/relativeLayout3">
+
+                        <ImageView
+                            android:id="@+id/imageView_fragment_event"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/imagebackground" />
+
+                        <tkhub.project.mscoba.MyClass.Font.FontHedar
+                            android:id="@+id/textView_fragment_event_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/imageView_fragment_event"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="5dip"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/mytextblack" />
+
+                        <tkhub.project.mscoba.MyClass.Font.FontHedar
+                            android:id="@+id/textView_fragment_event_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView_fragment_event_title"
+                            android:layout_marginLeft="5dip"
+                            android:text="Small Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/myBlack"
+                            android:layout_marginTop="10dp" />
+
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/relativeLayout5"
+                            android:layout_below="@+id/textView_fragment_event_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_fragment_event_date"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout10"
+                                android:layout_toEndOf="@+id/relativeLayout10" />
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout10">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_publishdate"
+                                    android:id="@+id/textView10"
+                                    android:textSize="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/colorPrimary" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/relativeLayout5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/relativeLayout11">
+
+                                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/icon_vanue"
+                                    android:id="@+id/textView36"
+                                    android:textSize="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/colorPrimary" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/textView_fragment_event_vanue"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/relativeLayout11"
+                                android:layout_toEndOf="@+id/relativeLayout11" />
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/calander"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

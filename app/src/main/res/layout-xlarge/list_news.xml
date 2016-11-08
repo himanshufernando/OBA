@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@drawable/customborder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView_news"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:background="#a09e9e" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#E6000000"
+            android:id="@+id/relativelayout_new"
+            android:visibility="gone">
+
+            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView_new"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/myWhite" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/myWhite"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_share"
+                android:layout_width="90dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/shareicon"
+                    android:layout_marginLeft="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/relativeLayout_share"
+                android:layout_toStartOf="@+id/relativeLayout_share">
+
+                <tkhub.project.mscoba.MyClass.Font.FontSpalsh
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:id="@+id/textView_news_title"
+                    android:textColor="@color/mytextblack"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

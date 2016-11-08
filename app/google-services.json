@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "906165103417",
+    "firebase_url": "https://msoba-285d8.firebaseio.com",
+    "project_id": "msoba-285d8",
+    "storage_bucket": "msoba-285d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906165103417:android:b2fc6ef4a5796d7e",
+        "android_client_info": {
+          "package_name": "tkhub.project.mscoba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906165103417-pskrbqfv6svrmddqp9irdaegilsoaq3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [{ "current_key": "" }],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

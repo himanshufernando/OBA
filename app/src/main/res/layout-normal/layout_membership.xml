@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="MEMBERSHIP"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/myWhite" />
+
+            <RelativeLayout
+                android:id="@+id/layout_navigation"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <com.balysv.materialmenu.MaterialMenuView
+                    android:id="@+id/action_bar_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:mm_color="@android:color/white" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/layout_download">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/icon_download"
+                    android:id="@+id/textView18"
+                    android:textColor="@color/myWhite"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout3"
+            android:background="@color/myWhite">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="10dip"
+                android:visibility="invisible"
+                android:layout_marginRight="5dip">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_graduationcap"
+                    android:id="@+id/textView_one_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <tkhub.project.mscoba.MyClass.Font.FontHedar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="The applicant should have attended MSC for 2(two) full academic years to be eligible to apply."
+                    android:id="@+id/textView_one"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_one_icon"
+                    android:layout_toEndOf="@+id/textView_one_icon"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/myBlack"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_one"
+                android:layout_alignLeft="@+id/relativeLayout_one"
+                android:layout_alignStart="@+id/relativeLayout_one"
+                android:layout_marginTop="10dip"
+                android:visibility="invisible"
+                android:layout_marginRight="5dip">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_graduationcap"
+                    android:id="@+id/textView_two_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <tkhub.project.mscoba.MyClass.Font.FontHedar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Please attach the original and copy of the School Leaving Certificate or any other proof of having attended Maris Stella College."
+                    android:id="@+id/textView_two"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_two_icon"
+                    android:layout_toEndOf="@+id/textView_two_icon"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/myBlack"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_two"
+                android:layout_alignLeft="@+id/relativeLayout_two"
+                android:layout_alignStart="@+id/relativeLayout_two"
+                android:layout_marginTop="10dip"
+                android:visibility="invisible"
+                android:layout_marginRight="5dp">
+
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_graduationcap"
+                    android:id="@+id/textView_three_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <tkhub.project.mscoba.MyClass.Font.FontHedar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="The original document and the membership card will be sent to you by register post after the committee approval."
+                    android:id="@+id/textView_three"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_three_icon"
+                    android:layout_toEndOf="@+id/textView_three_icon"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/myBlack"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_three"
+                android:layout_alignLeft="@+id/relativeLayout_three"
+                android:layout_alignStart="@+id/relativeLayout_three"
+                android:layout_marginTop="10dip"
+                android:visibility="invisible"
+                android:layout_marginRight="5dp">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_graduationcap"
+                    android:id="@+id/textView_four_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <tkhub.project.mscoba.MyClass.Font.FontHedar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Life Membership fee Rs. 2000 /- for applicant below 25 years of age and RS. 4000 /- for applicant over 25 years of age."
+                    android:id="@+id/textView_four"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_four_icon"
+                    android:layout_toEndOf="@+id/textView_four_icon"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/myBlack"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_four"
+                android:layout_alignLeft="@+id/relativeLayout_four"
+                android:layout_alignStart="@+id/relativeLayout_four"
+                android:layout_marginTop="10dip"
+                android:visibility="invisible"
+                android:layout_marginRight="5dp">
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_graduationcap"
+                    android:id="@+id/textView_five_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <tkhub.project.mscoba.MyClass.Font.FontHedar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Two passport size color photographs."
+                    android:id="@+id/textView_five"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_five_icon"
+                    android:layout_toEndOf="@+id/textView_five_icon"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/myBlack"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_five"
+                android:layout_alignLeft="@+id/relativeLayout_five"
+                android:layout_alignStart="@+id/relativeLayout_five"
+                android:layout_marginTop="10dip"
+                android:visibility="invisible"
+                android:layout_marginRight="6dp">
+
+
+
+                <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_graduationcap"
+                    android:id="@+id/textView_six_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="40sp" />
+
+                <tkhub.project.mscoba.MyClass.Font.FontHedar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Please draw the cheques in favour of‘Maris Stella College Old Boys Association’."
+                    android:id="@+id/textView_six"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_six_icon"
+                    android:layout_toEndOf="@+id/textView_six_icon"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="@color/myBlack"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drawer"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Relative_TitleBar"
+        android:layout_gravity="start"
+        android:background="#cc3F51B5"
+        android:clickable="false">
+
+
+
+        <ListView
+            android:id="@+id/listView_navigation"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout6"
+            android:layout_centerHorizontal="true"
+            android:divider="@color/myBlue" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark">
+
+            <tkhub.project.mscoba.MyClass.Font.FontHedar
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEWS"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/myWhite"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/layout_navigation"
+                android:layout_toEndOf="@+id/layout_navigation" />
+
+            <RelativeLayout
+                android:id="@+id/layout_navigation"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <com.balysv.materialmenu.MaterialMenuView
+                    android:id="@+id/action_bar_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    app:mm_color="@android:color/white" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout3"
+            android:background="@color/myWhite">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF">
+
+                        <ImageView
+                            android:id="@+id/imageView_fragment_news"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/share"
+                            android:scaleType="fitXY"
+                            android:layout_marginTop="5dp" />
+
+                        <tkhub.project.mscoba.MyClass.Font.FontHedar
+                            android:id="@+id/textView_fragment_news_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/imageView_fragment_news"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginTop="5dip"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/mytextblack" />
+
+                        <tkhub.project.mscoba.MyClass.Font.FontHedar
+                            android:id="@+id/textView_fragment_news_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/textView_fragment_news_title"
+                            android:layout_marginLeft="2dip"
+                            android:text="Small Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/myBlack"
+                            android:layout_marginTop="10dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp">
+
+                        <tkhub.project.mscoba.MyClass.Font.FontHedar
+                            android:id="@+id/textView_fragment_news_publish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Small Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/mytextblack"
+                            android:visibility="visible"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/relativeLayout4"
+                            android:layout_toEndOf="@+id/relativeLayout4" />
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/relativeLayout4">
+
+                            <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/icon_circle"
+                                android:id="@+id/textView5"
+                                android:textSize="55dp"
+                                android:textColor="@color/colorAccent"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true" />
+
+                            <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/icon_publishdate"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

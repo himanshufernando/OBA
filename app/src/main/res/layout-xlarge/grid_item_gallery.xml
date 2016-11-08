@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_gallery"
+        android:layout_width="350dip"
+        android:layout_height="350dip"
+        android:scaleType="centerCrop" />
+
+    <tkhub.project.mscoba.MyClass.Font.FontHedar
+        android:id="@+id/text_gallery_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/myBlack" />
+
+
+
+</LinearLayout>

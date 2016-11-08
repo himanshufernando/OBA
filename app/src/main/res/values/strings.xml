@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MSCOBA</string>
+
+    //icon text
+    <string name="icon_heart">&#xf08a;</string>
+    <string name="icon_heart_fill">&#xf004;</string>
+    <string name="icon_share">&#xf1e0;</string>
+    <string name="icon_publishdate">&#xf274;</string>
+    <string name="icon_vanue">&#xf041;</string>
+    <string name="icon_refresh">&#xf021;</string>
+    <string name="icon_moreimage">&#xf1c5;</string>
+    <string name="icon_caladeradd">&#xf271;</string>
+    <string name="icon_quotation">&#xf10e;</string>
+    <string name="icon_arrowright">&#xf054;</string>
+    <string name="icon_arrowleft">&#xf053;</string>
+    <string name="icon_graduationcap">&#xf19d;</string>
+    <string name="icon_download">&#xf019;</string>
+    <string name="icon_lock">&#xf023;</string>
+    <string name="icon_logout">&#xf011;</string>
+
+    <string name="icon_name">&#xf007;</string>
+    <string name="icon_moble">&#xf095;</string>
+    <string name="icon_landphoe">&#xf1ac;</string>
+    <string name="icon_email">&#xf1fa;</string>
+    <string name="icon_membershipno">&#xf251;</string>
+    <string name="icon_nic">&#xf084;</string>
+
+    <string name="icon_building">&#xf1ad;</string>
+
+    <string name="icon_msc">&#xf19c;</string>
+    <string name="icon_hisory">&#xf254;</string>
+    <string name="icon_like">&#xf164;</string>
+    <string name="icon_developer">&#xf21b;</string>
+    <string name="icon_circle">&#xf111;</string>
+
+
+    <string name="string_about_one">On 2nd January 1817, Father Marcelline Champagnat, son of a farmer in the hamlet of Rozey close to the town of Marlhes in Loire, France, now Saint Marcelline Champagnat, founded the religious order of the Marist Brothers. A hundred years later,  in 1918, four religious Brothers of this congregation came to Negombo, Sri Lanka, and took over the management of St.Mary s College. In 1922, the school moved to its present site and assumed the new name of Maris Stella College, and  thus our school was born.
+        Today, the College stands on an eight acre block of land only a short distance away from the centre of the city of Negombo commonly known as Little Rome owing to its large Catholic population and its beautiful churches.</string>
+
+    <string name="string_about_two">Four religious Brothers of the religious order of the Marist Brothers came to Negombo, Sri Lanka, in 1918 and took over the management of St. Mary s College. In 1922, the school moved to its present site and assumed the new name of Maris Stella College.                        The history of the Primary School goes back to 1921 when Bro. Lewis was in charge of the elementary School, Standard Two E.S.L.C (Elementary School Leaving Certificate) Class. There were three long cadjan sheds which housed eight primary classes.
+            Bro. Mafia took charge of the Primary Department in 1929. Bro. Paschal was a musician and with Mr. Edward Ferdinands, the music teacher, trained the choir to sing in parts. When the boys came out first in the school singing competition in Colombo, the newspapers referred to them as the "Magic Singers" from Negombo.
+        The School s broadcasting services were inaugurated in 1930. Maris Stella installed a wireless set in the library, and the boys followed lessons, such as nature talks to children. Electricity came to the whole of Negombo in 1931. The same year the first Corpus Christi procession took place. It went around the quadrangle. The cadets presented a Royal Guard of Honour.
+        In 1935 Mr. M. Joseph was appointed Headmaster of the Primary School. Later he took to politics and eventually became the Mayor of Negombo. Some veteran teachers of the era were Mr. K. Joseph, M. Fernando, Mr. W. Don Thomas, (father of Eddie Jayamanne) Mr. W. Don John, Mr. B. C. Edmund, Mr. J. M. de Levera, Lieutenant Vincent Fernando, and Captain D. F. Jayamanne.
+        In August 1939, World War II broke out. The following year Maris Stella was requisitioned in part by the Royal Artillery for the headquarters. The Primary School shifted to Tammita Church grounds into temporary cadjan sheds. Then Royal Artillery moved out in November, but the Royal Air Force occupied the buildings in March the following year.
+        Bro. Nazier took charge of the Primary School in January, 1941. The College was put under protection of Our Lady of Perpetual Help, to be spared the ravages of war. There were frequent practices of Air Raid Precautions in schools. Trenches were dug for shelter, and every child knew what to do in case of and air raid warning. Fortunately, the school was in Easter holidays when the Japanese Air Raid took place in 1942 but their invasion fleet was turned back.
+        In the meantime, we a three quarter acre block of land behind Maris Stella, was purchased and 12 classrooms, a staff room and a principal s office were built; the Primary School moved back from Tammita. When the war ended, the students of Maris Stella made a pilgrimage of thanks giving to Our Lady of Lourdes, Kimbulapitiya.
+        When Bro. Nazier went to Europe in 1950, for a year s study leave, Mr. Leonard Obris acted as Principal of the Primary Dept. For many years the Primary Dept. was in temporary cadjan sheds. So a building project was launched. Funds were raised through carnivals and other means. The Primers staged a Rosary Pageant presented by 250 little actors.
+        The late Bro. Xavier was the architect and the builder of the Primary School. It was storeyed building east of the play ground, extending between the College Hall and the large portico which was to house the College bus. In June 1959, Bro. Nazier went on transfer to Tudella and Bro. Gerard Peiris became the next principal of Maris Stella Primary School.
+        Maris Stella Primary School had been going on for years as a separate third grage aided school recognised by the Government with separate tutorial staff and annual returns. When all the third grade schools were taken over by the Government. Maris Stella Primary School together with the Primary Schools of many leading Chritian schools came under this category. This position was contested upon and the Government gave back the Primary Schools after some time, now to be recognized only as a section of the upper school under on Principal and to be continued as a non fee levying school.
+        It was during the time of Bro. Gerard Peiris as Principal of the Primary School that the change took place. After serving the College form 1959 to 1965 he was transferred to Christ King College at Tudella which was another Maris Institution.
+        Bro. Joseph Fonseka succeeded him. He was very methodical in his dealings and was insistent on cleanliness. "Order leads to God" was one of firm beliefes. The class room and its equipment had to be very neat and tidy. He supervised the cleanliness of the place himself visiting every nook and corner of the Primary department. The first thing he attended to at the beginning of every school year was painting of the desks, chairs, and benches of the classrooms. This has now become a tradition at Maris Stella thanks to Bro. Joseph s untiring efforts. His office gave evidence at who he was. Each item in his office had its due place and it was a model office it was a model office item in his office had its due place and it was a model office without any exaggeration. After eight years of dedicated service, in 1972, he left Maris Stella for further religious studies.
+        Bro. Ephrem Obris took his place next. A man of not too many words, he served the college for four years as the sectional head of the lower classes. He then left for Pakistan to work as a missionary. Bro. Joseph Fonseka who was his predecessor joined the College administration again for a short period of three years.
+        Brothers Shanthi Liyanage, Dela Soysa, Remigius Fernando succeeded Bro. Joseph, each for a short period respectively and offered their services to the College as Head of the Primary Section</string>
+
+
+     <string name="string_about_three">The “Old Boys Association of Maris Stella College” is the main Alumni Association of the College with a proud history of eighty years which was started in 1928. There are other smaller bodies such as Junior Branch, Colombo Branch, UK Branch, North America Branch and Australia Branch etc… which are affiliated to the main body plus a number of Batch Groups.
+         This organization operates with the close collaboration of the College administration for bringing together alumni and encouraging and coordinating their support for Maris Stella College. It serves as the focus for alumni relations and activities on behalf of the College. Its mission is to foster alumni interest and goodwill in College affairs by encouraging intellectual and emotional ties between members and their College.
+         The Association has a representation in few places around the world too, with a rapidly expanding alumni network of volunteer-run groups, as mentioned before with a present membership exceeding One Thousand Five Hundred members in the main body.
+         This network provides a convenient opportunity for you to continue to develop your relationship with College and College-people wherever you are in the world!</string>
+    <string name="facebook_app_id">197071170655070</string>
+
+    <string name="FcmPref">tkhub.project.mscoba.fcmref</string>
+    <string name="FcmToken">tkhub.project.mscoba.token</string>
+</resources>

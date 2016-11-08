@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/test_nointernet"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:id="@+id/imageView_dialog_internet_close"
+        android:src="@drawable/tick_red"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <tkhub.project.mscoba.MyClass.Font.FontHedar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView9"
+        android:textColor="@color/myWhite"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:text="No internet connection" />
+
+</RelativeLayout>
