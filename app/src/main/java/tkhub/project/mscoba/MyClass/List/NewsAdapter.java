@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -46,8 +47,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         holder.titel.setText(item.get(position).titel);
         holder.textNew.setText("TODAY");
-        UrlImageViewHelper.setUrlDrawable(holder.imageCover, item.get(position).image, R.drawable.imagebackground);
 
+        Picasso.with(mContext).load(item.get(position).image).into(holder.imageCover);
         holder.share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -403,6 +403,8 @@ public class News extends Activity implements Animation.AnimationListener {
             }
         });
 
+
+
         dialogBox.show();
     }
 

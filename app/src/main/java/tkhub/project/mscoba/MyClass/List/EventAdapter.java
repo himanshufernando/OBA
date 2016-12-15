@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -48,8 +49,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
 
         holder.eventTitel.setText(item.get(position).eventTitle);
       //  holder.eventDate.setText(item.get(position).eventDuedate.substring(0, 10));
+        Picasso.with(mContext).load(holder.imageUrl).into(holder.eventtumbimage);
 
-        UrlImageViewHelper.setUrlDrawable(holder.eventtumbimage, holder.imageUrl, R.drawable.imagebackground);
 
 
         holder.eventtumbimage.setOnClickListener(new View.OnClickListener() {

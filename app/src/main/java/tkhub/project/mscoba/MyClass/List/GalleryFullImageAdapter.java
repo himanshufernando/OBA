@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -52,7 +53,8 @@ public class GalleryFullImageAdapter extends PagerAdapter {
         View viewLayout = inflater.inflate(R.layout.list_gallery_fullimages, container, false);
         String imageUrl = imagePaths.get(position);
         imageViewGalleryFullImage =(ImageView) viewLayout.findViewById(R.id.imageView_Gallery_FullImage);
-        UrlImageViewHelper.setUrlDrawable(imageViewGalleryFullImage, imageUrl, R.drawable.imagebackground);
+
+        Picasso.with(activity).load(imageUrl).into(imageViewGalleryFullImage);
         ((ViewPager) container).addView(viewLayout);
 
         return viewLayout;

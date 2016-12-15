@@ -1,10 +1,14 @@
 package tkhub.project.mscoba.Layout;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.ActivityOptions;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
@@ -50,6 +54,15 @@ TextView name,membershino,nic,address,landnumber,moblie,email;
         landnumber=(TextView)findViewById(R.id.textView_pro_landphone);
         moblie=(TextView)findViewById(R.id.textView_pro_phone);
         email=(TextView)findViewById(R.id.textView_pro_email);
+
+
+        showMessage("This features is under development",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        return;
+                    }
+                });
 
 
         name.setText("Name : "+"W.H.FERANANDO");
@@ -212,10 +225,17 @@ TextView name,membershino,nic,address,landnumber,moblie,email;
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+              //  layoutdetails.setVisibility(View.VISIBLE);
+              //  layoutlogin.setVisibility(View.INVISIBLE);
+               // textlogout.setVisibility(View.VISIBLE);
 
-                layoutdetails.setVisibility(View.VISIBLE);
-                layoutlogin.setVisibility(View.INVISIBLE);
-                textlogout.setVisibility(View.VISIBLE);
+                showMessage("This features is under development",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                return;
+                            }
+                        });
 
 
             }
@@ -262,5 +282,13 @@ TextView name,membershino,nic,address,landnumber,moblie,email;
         Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
         finish();
         startActivity(i, bndlanimation);
+    }
+
+    private void showMessage(String message, DialogInterface.OnClickListener okListener) {
+        new AlertDialog.Builder(Profile.this)
+                .setMessage(message)
+                .setPositiveButton("OK", okListener)
+                .create()
+                .show();
     }
 }

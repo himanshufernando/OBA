@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -58,7 +59,9 @@ public class AlbumAdapter extends BaseAdapter implements View.OnClickListener {
 
         ImageView coverimage =(ImageView)view.findViewById(R.id.image_gallery);
 
-        UrlImageViewHelper.setUrlDrawable(coverimage, item.get(position).image, R.drawable.imagebackground);
+
+        Picasso.with(mContext).load( item.get(position).image).into(coverimage);
+
         view.setOnClickListener(new OnItemClickListener(position));
         return view;
     }

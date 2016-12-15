@@ -89,9 +89,6 @@ public class EventCalendar extends FragmentActivity {
         layoutCalander =(RelativeLayout) findViewById(R.id.relativeLayoutCalander);
         progress = (RelativeLayout) findViewById(R.id.relativelayout_proress);
 
-      //  realmConfig = new RealmConfiguration.Builder(this) .deleteRealmIfMigrationNeeded().build();
-       // mRealm = Realm.getInstance(realmConfig);
-
         Realm.init(this);
 
         mRealm= Realm.getDefaultInstance();
@@ -240,15 +237,6 @@ public class EventCalendar extends FragmentActivity {
         });
 
 
-       /* final Calendar nextYear = Calendar.getInstance();
-        final Calendar lastYear = Calendar.getInstance();
-        nextYear.add(Calendar.YEAR, 1);
-        lastYear.add(Calendar.YEAR, -1);
-
-
-        mycalander.init(lastYear.getTime(), nextYear.getTime()) //
-                .inMode(CalendarPickerView.SelectionMode.MULTIPLE) //
-                .withSelectedDate(new Date()).displayOnly();*/
 
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = conMgr.getActiveNetworkInfo();

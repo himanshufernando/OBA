@@ -33,15 +33,15 @@ android {
         applicationId "tkhub.project.mscoba"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
     buildTypes {
         release {
-            minifyEnabled false
             shrinkResources true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -80,5 +80,6 @@ dependencies {
     compile 'com.github.sundeepk:compact-calendar-view:1.9.1'
     compile 'com.koushikdutta.urlimageviewhelper:urlimageviewhelper:1.0.4'
     compile 'com.getkeepsafe.taptargetview:taptargetview:1.5.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
 apply plugin: 'com.google.gms.google-services'

@@ -46,7 +46,6 @@ public class Membership extends Activity implements Animation.AnimationListener 
     private MaterialMenuView materialMenuView;
     DrawerLayout dLayout;
     int a;
-    private static final String SHOWCASE_ID = "Membership";
 
 
     @Override
@@ -331,7 +330,7 @@ public class Membership extends Activity implements Animation.AnimationListener 
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new getGalleyOffline().execute();
+               // new getGalleyOffline().execute();
             }
         });
 

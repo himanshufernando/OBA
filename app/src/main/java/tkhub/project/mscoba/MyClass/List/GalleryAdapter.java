@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -63,7 +64,8 @@ public class GalleryAdapter extends BaseAdapter implements View.OnClickListener 
         ImageView coverimage =(ImageView)view.findViewById(R.id.image_gallery);
         TextView title=(TextView)view.findViewById(R.id.text_gallery_title);
 
-        UrlImageViewHelper.setUrlDrawable(coverimage,item.get(position).coverimage, R.drawable.imagebackground);
+        Picasso.with(mContext).load(item.get(position).coverimage).into(coverimage);
+
         title.setText(item.get(position).title);
 
         view.setOnClickListener(new OnItemClickListener(position));

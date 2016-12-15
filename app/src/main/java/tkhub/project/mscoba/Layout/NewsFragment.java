@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -41,17 +43,19 @@ public class NewsFragment extends Activity {
 
         if(intentNews.getBooleanExtra("status", false) == true) {
 
-            Intent share = new Intent(Intent.ACTION_SEND);
+           /* Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");
             share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
             share.putExtra(Intent.EXTRA_SUBJECT, intentNews.getStringExtra("title"));
             share.putExtra(Intent.EXTRA_TEXT, intentNews.getStringExtra("url"));
             share.putExtra(Intent.EXTRA_TITLE, intentNews.getStringExtra("title"));
-            startActivity(Intent.createChooser(share, "Share"));
+            startActivity(Intent.createChooser(share, "Share"));*/
+
+            Toast.makeText(NewsFragment.this,"This features is block",Toast.LENGTH_SHORT).show();
 
         }
-
-        UrlImageViewHelper.setUrlDrawable(coverImage, intentNews.getStringExtra("iamgeurl"), R.drawable.imagebackground);
+        Picasso.with(this).load(intentNews.getStringExtra("iamgeurl")).into(coverImage);
+       // UrlImageViewHelper.setUrlDrawable(coverImage, intentNews.getStringExtra("iamgeurl"), R.drawable.imagebackground);
         title.setText(intentNews.getStringExtra("title"));
         content.setText(intentNews.getStringExtra("content"));
 

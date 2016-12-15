@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 import com.mikhaellopez.circularimageview.CircularImageView;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -71,7 +72,8 @@ public class CommitteeAdapter extends PagerAdapter {
 
         quter.setText("\""+""+comiitequter.get(position)+""+"\"");
 
-        UrlImageViewHelper.setUrlDrawable(image, ImageUrl, R.drawable.profile_front);
+        Picasso.with(_activity).load(ImageUrl).into(image);
+
 
         ((ViewPager) container).addView(viewLayout);
 

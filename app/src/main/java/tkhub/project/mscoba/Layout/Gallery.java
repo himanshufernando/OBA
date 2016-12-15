@@ -310,7 +310,9 @@ public class Gallery extends Activity {
                 String jsonData = responses.body().string();
                 JSONObject Jobject = new JSONObject(jsonData);
                 JSONArray Jarray = Jobject.getJSONArray("galleryalbum");
+                groupImages.clear();
                 groupImages.add(0, params[1]);
+                albumItem.clear();
 
                 for (int i = 0; i < Jarray.length(); i++) {
                     object = Jarray.getJSONObject(i);
