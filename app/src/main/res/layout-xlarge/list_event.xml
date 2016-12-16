@@ -2,32 +2,44 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
 
-    android:layout_height="wrap_content"
     android:background="@drawable/customborder"
-    android:id="@+id/relativeLayout9">
+    android:id="@+id/relativeLayout9"
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="400dip"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/relativeLayout">
+        android:id="@+id/relativeLayout"
+        android:layout_height="300dip">
 
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
             android:id="@+id/imageView_event"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:scaleType="center"
-            android:background="#a09e9e" />
+            android:scaleType="centerCrop"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="300dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:id="@+id/relativeLayoutmargin"
+        android:layout_below="@+id/relativeLayout"
+        >
+
+
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayoutmargin"
         android:layout_centerHorizontal="true"
         android:background="@color/myWhite"
         android:layout_marginBottom="10dp">
@@ -41,10 +53,10 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:layout_height="80dp">
 
                 <tkhub.project.mscoba.MyClass.Font.FontSpalsh
                     android:layout_width="wrap_content"

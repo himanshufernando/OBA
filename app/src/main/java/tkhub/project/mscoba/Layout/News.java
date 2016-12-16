@@ -1,13 +1,18 @@
 package tkhub.project.mscoba.Layout;
 
+import android.Manifest;
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Dialog;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
@@ -18,10 +23,14 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Patterns;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -51,8 +60,10 @@ import java.util.ArrayList;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout;
+import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 import tkhub.project.mscoba.MyClass.DB.NewsDB;
 import tkhub.project.mscoba.MyClass.List.NavigationAdapter;
@@ -78,9 +89,10 @@ public class News extends Activity implements Animation.AnimationListener {
     NewsAdapter newsAdapter;
     int a;
 
+    String possibleEmail = "";
     RelativeLayout progress;
     int shareiconstarus = 0;
-
+    private static final int MY_PERMISSIONS_REQUEST_GET_ACCOUNTS = 123;
 
     WaveSwipeRefreshLayout mWaveSwipeRefreshLayout;
 
@@ -103,12 +115,12 @@ public class News extends Activity implements Animation.AnimationListener {
         progress = (RelativeLayout) findViewById(R.id.relativelayout_proress);
         progress.setVisibility(View.VISIBLE);
 
-      //  realmConfig = new RealmConfiguration.Builder(this).deleteRealmIfMigrationNeeded().build();
-      //  mRealm = Realm.getInstance(realmConfig);
+        //  realmConfig = new RealmConfiguration.Builder(this).deleteRealmIfMigrationNeeded().build();
+        //  mRealm = Realm.getInstance(realmConfig);
 
         Realm.init(this);
 
-        mRealm= Realm.getDefaultInstance();
+        mRealm = Realm.getDefaultInstance();
 
         String ns = Context.NOTIFICATION_SERVICE;
         NotificationManager nMgr = (NotificationManager) getApplicationContext().getSystemService(ns);
@@ -273,13 +285,9 @@ public class News extends Activity implements Animation.AnimationListener {
             offlinenews();
         } else {
             new getNews().execute();
-
         }
 
 
-        //  AdView adView = (AdView) findViewById(R.id.adView);
-        //  AdRequest adRequest = new AdRequest.Builder().build();
-        //  adView.loadAd(adRequest);
     }
 
     @Override
@@ -404,9 +412,9 @@ public class News extends Activity implements Animation.AnimationListener {
         });
 
 
-
         dialogBox.show();
     }
+
 
     @Override
     public void onBackPressed() {
@@ -436,5 +444,7 @@ public class News extends Activity implements Animation.AnimationListener {
 
 
     }
+
+
 
 }

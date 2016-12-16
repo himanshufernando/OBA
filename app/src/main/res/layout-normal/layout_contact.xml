@@ -194,7 +194,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:text="+94 312 233 748"
+                            android:text="+94 312 224 657"
                             android:id="@+id/textView_phone"
                             android:layout_centerVertical="true"
                             android:layout_centerHorizontal="true" />
@@ -203,7 +203,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:text="+94 716 607 483"
+                            android:text="+94 773 225 900"
                             android:id="@+id/textView_phone_two"
                             android:layout_below="@+id/textView_phone"
                             android:layout_centerHorizontal="true" />

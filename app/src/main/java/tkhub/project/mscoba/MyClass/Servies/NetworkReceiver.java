@@ -26,7 +26,6 @@ public class NetworkReceiver extends BroadcastReceiver {
 
         if (netInfo == null) {
 
-
         } else {
             try {
                 JsonServices js=new JsonServices(context);

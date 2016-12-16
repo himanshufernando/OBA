@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
