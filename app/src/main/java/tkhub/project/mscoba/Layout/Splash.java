@@ -1,33 +1,22 @@
 package tkhub.project.mscoba.Layout;
 
-import android.Manifest;
+
 import android.app.Activity;
 import android.app.ActivityOptions;
-import android.content.Context;
-import android.content.DialogInterface;
+
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.os.AsyncTask;
-import android.os.Build;
+
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
-import android.widget.Toast;
+
 
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 
-import org.json.JSONObject;
+
 
 import io.fabric.sdk.android.Fabric;
-import okhttp3.FormBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+
 import tkhub.project.mscoba.R;
 
 
@@ -61,7 +50,7 @@ public class Splash extends Activity {
                     startActivity(i, bndlanimation);
 
                 }
-            }, 4000);
+            }, 3500);
 
 
 

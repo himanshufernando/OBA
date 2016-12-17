@@ -83,11 +83,8 @@ public class Event extends Activity {
         eventList.setLayoutManager(mLayoutManager);
         eventList.setItemAnimator(new DefaultItemAnimator());
 
-      //  realmConfig = new RealmConfiguration.Builder(this).deleteRealmIfMigrationNeeded().build();
-      //  mRealm = Realm.getInstance(realmConfig);
 
         Realm.init(this);
-
         mRealm= Realm.getDefaultInstance();
 
 
@@ -267,7 +264,7 @@ public class Event extends Activity {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://www.himanshufernando.com/App/OBA/php/allevent.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allevent.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();

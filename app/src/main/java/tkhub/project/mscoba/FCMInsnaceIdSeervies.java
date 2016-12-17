@@ -51,7 +51,7 @@ public class FCMInsnaceIdSeervies extends FirebaseInstanceIdService {
                         .add("RegID", resToken)
                         .build();
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/register.php").post(formBody).build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/register.php").post(formBody).build();
                 Response responses = null;
                 responses = client.newCall(request).execute();
 

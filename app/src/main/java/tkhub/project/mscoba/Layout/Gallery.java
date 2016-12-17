@@ -238,7 +238,6 @@ public class Gallery extends Activity {
         if (netInfo == null) {
             showDialogNoInernet(this);
             progress.setVisibility(View.INVISIBLE);
-          //  new getGalleyOffline().execute();
         } else {
             new getGalley().execute();
         }
@@ -264,7 +263,6 @@ public class Gallery extends Activity {
 
         ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = conMgr.getActiveNetworkInfo();
-        // coverImageId = id;
         if (netInfo == null) {
             showDialogNoInernet(this);
         } else {
@@ -302,7 +300,7 @@ public class Gallery extends Activity {
             try {
                 RequestBody formBody = new FormBody.Builder().add("Id",params[0]).build();
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/getalbum_by_id.php").post(formBody).build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/getalbum_by_id.php").post(formBody).build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();
@@ -360,7 +358,7 @@ public class Gallery extends Activity {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/gallery.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/gallery.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();

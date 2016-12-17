@@ -83,16 +83,14 @@ public class News extends Activity implements Animation.AnimationListener {
     DrawerLayout dLayout;
 
     private Realm mRealm;
-    private RealmConfiguration realmConfig;
+
 
     ArrayList<Newsitem> newsItems = new ArrayList<Newsitem>();
     NewsAdapter newsAdapter;
     int a;
 
-    String possibleEmail = "";
     RelativeLayout progress;
     int shareiconstarus = 0;
-    private static final int MY_PERMISSIONS_REQUEST_GET_ACCOUNTS = 123;
 
     WaveSwipeRefreshLayout mWaveSwipeRefreshLayout;
 
@@ -115,8 +113,6 @@ public class News extends Activity implements Animation.AnimationListener {
         progress = (RelativeLayout) findViewById(R.id.relativelayout_proress);
         progress.setVisibility(View.VISIBLE);
 
-        //  realmConfig = new RealmConfiguration.Builder(this).deleteRealmIfMigrationNeeded().build();
-        //  mRealm = Realm.getInstance(realmConfig);
 
         Realm.init(this);
 
@@ -319,8 +315,7 @@ public class News extends Activity implements Animation.AnimationListener {
             try {
                 OkHttpClient client = new OkHttpClient();
 
-
-                Request request = new Request.Builder().url("http://www.himanshufernando.com/App/OBA/php/allnews.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allnews.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();
@@ -328,7 +323,6 @@ public class News extends Activity implements Animation.AnimationListener {
                 String jsonData = responses.body().string();
                 Jobject = new JSONObject(jsonData);
                 JSONArray Jarray = Jobject.getJSONArray("allNews");
-
 
                 for (int i = 0; i < Jarray.length(); i++) {
                     object = Jarray.getJSONObject(i);

@@ -70,7 +70,7 @@ public class JsonServices {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://www.himanshufernando.com/App/OBA/php/allnews.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allnews.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();
@@ -142,7 +142,7 @@ public class JsonServices {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://www.himanshufernando.com/App/OBA/php/allevent.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allevent.php").build();
                 Response responses = null;
                 responses = client.newCall(request).execute();
                 String jsonData = responses.body().string();
@@ -216,7 +216,7 @@ public class JsonServices {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://www.himanshufernando.com/App/OBA/php/allnewslatters.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allnewslatters.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();
@@ -285,7 +285,7 @@ public class JsonServices {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/allcalender.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allcalender.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();
@@ -350,7 +350,7 @@ public class JsonServices {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/committee.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/committee.php").build();
                 Response responses = null;
                 responses = client.newCall(request).execute();
                 String jsonData = responses.body().string();

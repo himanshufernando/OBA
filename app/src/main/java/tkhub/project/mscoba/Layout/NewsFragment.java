@@ -43,19 +43,17 @@ public class NewsFragment extends Activity {
 
         if(intentNews.getBooleanExtra("status", false) == true) {
 
-           /* Intent share = new Intent(Intent.ACTION_SEND);
+            Intent share = new Intent(Intent.ACTION_SEND);
             share.setType("text/plain");
             share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
             share.putExtra(Intent.EXTRA_SUBJECT, intentNews.getStringExtra("title"));
             share.putExtra(Intent.EXTRA_TEXT, intentNews.getStringExtra("url"));
             share.putExtra(Intent.EXTRA_TITLE, intentNews.getStringExtra("title"));
-            startActivity(Intent.createChooser(share, "Share"));*/
-
-            Toast.makeText(NewsFragment.this,"This features is block",Toast.LENGTH_SHORT).show();
+            startActivity(Intent.createChooser(share, "Share"));
 
         }
         Picasso.with(this).load(intentNews.getStringExtra("iamgeurl")).into(coverImage);
-       // UrlImageViewHelper.setUrlDrawable(coverImage, intentNews.getStringExtra("iamgeurl"), R.drawable.imagebackground);
+
         title.setText(intentNews.getStringExtra("title"));
         content.setText(intentNews.getStringExtra("content"));
 
@@ -134,13 +132,6 @@ public class NewsFragment extends Activity {
         Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
         finish();
         startActivity(i, bndlanimation);
-    }
-    private static String getMonth(String date) throws ParseException {
-        Date d = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH).parse(date);
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(d);
-        String monthName = new SimpleDateFormat("MMMM").format(cal.getTime());
-        return monthName;
     }
 }
 

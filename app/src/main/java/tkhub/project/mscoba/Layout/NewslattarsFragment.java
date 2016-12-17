@@ -62,7 +62,6 @@ text =(TextView)findViewById(R.id.textView2) ;
                 @Override
                 public void onPageStarted(WebView view, String url, Bitmap facIcon) {
                     loadingFinished = false;
-                    //SHOW LOADING IF IT ISNT ALREADY VISIBLE
                 }
 
                 @Override
@@ -83,23 +82,6 @@ text =(TextView)findViewById(R.id.textView2) ;
             pdfwebvie.loadUrl("http://docs.google.com/gview?embedded=true&url=" + intentNews.getStringExtra("url"));
 
 
-
-
-
-
-          /*
-            WebView pdfwebvie=(WebView)findViewById(R.id.webView_NewsLetter_PD);
-            pdfwebvie.getSettings().setJavaScriptEnabled(true);
-
-            pdfwebvie.setWebViewClient(new WebViewClient() {
-                @Override
-                public void onPageFinished(WebView view, String url) {
-
-                    text.setVisibility(View.INVISIBLE);
-
-                }
-            });
-            pdfwebvie.loadUrl("http://docs.google.com/gview?embedded=true&url=" + intentNews.getStringExtra("url"));*/
         }
 
 

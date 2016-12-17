@@ -61,7 +61,7 @@ public class EventMap extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.getUiSettings().setZoomControlsEnabled(false);
-        LatLng sydney = new LatLng(lan,lon);//la.lo
+        LatLng sydney = new LatLng(lan,lon);
 
         mMap.addMarker(new MarkerOptions().position(sydney).title(vanue));
         CameraPosition cameraPosition = new CameraPosition.Builder()

@@ -77,9 +77,6 @@ public class Newslatters extends Activity {
         progress = (RelativeLayout) findViewById(R.id.relativelayout_proress);
         layoutmain = (RelativeLayout) findViewById(R.id.relativelayout_main);
 
-    //    realmConfig = new RealmConfiguration.Builder(this).deleteRealmIfMigrationNeeded().build();
-    //    mRealm = Realm.getInstance(realmConfig);
-
 
         Realm.init(this);
 
@@ -260,7 +257,7 @@ public class Newslatters extends Activity {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://www.himanshufernando.com/App/OBA/php/allnewslatters.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allnewslatters.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();

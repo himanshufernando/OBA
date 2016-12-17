@@ -40,7 +40,7 @@ import tkhub.project.mscoba.R;
 public class Contact extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     private MaterialMenuView materialMenuView;
-    RelativeLayout layoutMap,layoutBackground,layoutPhone,layoutAddress,layoutWeb;
+    RelativeLayout layoutMap,layoutPhone,layoutAddress,layoutWeb;
     TextView textPhone,textMobile,textAddresOne,textAddresTwo,textAddresThree,textAddresFour,textWeb,textEmail,iconPhone,iconAddres,iconWeb;
 
     DrawerLayout dLayout;
@@ -55,7 +55,7 @@ public class Contact extends FragmentActivity implements OnMapReadyCallback {
 
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         materialMenuView = (MaterialMenuView) findViewById(R.id.action_bar_menu);
-       // materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
+
         materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
 
         layoutMap = (RelativeLayout) findViewById(R.id.relativeLayout_map);
@@ -104,7 +104,6 @@ public class Contact extends FragmentActivity implements OnMapReadyCallback {
             public void onClick(View v) {
                 if (a == 0) {
                     dLayout.openDrawer(Gravity.LEFT);
-                 //   materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.ARROW);
                     materialMenuView.animateIconState(MaterialMenuDrawable.IconState.ARROW);
                     a = 1;
                 } else {
@@ -233,8 +232,6 @@ public class Contact extends FragmentActivity implements OnMapReadyCallback {
         }
 
 
-
-        //On
         layoutPhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

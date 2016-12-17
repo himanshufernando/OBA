@@ -42,7 +42,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -58,13 +58,9 @@ public class EventCalendar extends FragmentActivity {
 
     private MaterialMenuView materialMenuView;
     DrawerLayout dLayout;
-
     int a;
-    ArrayList<String> planeDate = new ArrayList<String>();
     ArrayList<String[]> deventDetail;
-
     private Realm mRealm;
-    private RealmConfiguration realmConfig;
     TextView textViewcurrentDate;
 
 
@@ -312,7 +308,6 @@ public class EventCalendar extends FragmentActivity {
             @Override
             public void onMonthScroll(Date firstDayOfNewMonth) {
                 textViewcurrentDate.setText(dateFormatForMonth.format(firstDayOfNewMonth));
-               // System.out.println("maonth  :"+dateFormatForMonth.format(firstDayOfNewMonth));
             }
         });
 
@@ -339,7 +334,7 @@ public class EventCalendar extends FragmentActivity {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/allcalender.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/allcalender.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();

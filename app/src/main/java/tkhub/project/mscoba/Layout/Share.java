@@ -218,7 +218,7 @@ share=(Button)findViewById(R.id.buttonshare);
             @Override
             public void onClick(View v) {
 
-               /* ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo netInfo = conMgr.getActiveNetworkInfo();
 
                 if (netInfo == null) {
@@ -231,10 +231,7 @@ share=(Button)findViewById(R.id.buttonshare);
                     share.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=tkhub.project.mscoba");
                     share.putExtra(Intent.EXTRA_TITLE, "Find MSC OBA Official app via Play store and Apple store. Our ultimate goal is create a bridge between you and us");
                     startActivity(Intent.createChooser(share, "Share"));
-                }*/
-
-                Toast.makeText(Share.this,"This features is block",Toast.LENGTH_SHORT).show();
-
+                }
 
 
             }

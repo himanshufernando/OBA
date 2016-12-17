@@ -81,6 +81,10 @@
             android:name=".Layout.EventMap"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".Layout.TKHub"
+            android:screenOrientation="portrait" />
+
         <service android:name=".FCMInsnaceIdSeervies" >
             <intent-filter >
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>

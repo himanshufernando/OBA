@@ -39,7 +39,7 @@ import tkhub.project.mscoba.R;
  */
 public class EventFragment extends Activity {
 
-    private static final String SHOWCASE_ID = "EventFragment";
+
     private static final int MY_PERMISSIONS_REQUEST_WRITE_CALENDAR = 123;
     Intent intentNews;
     @Override

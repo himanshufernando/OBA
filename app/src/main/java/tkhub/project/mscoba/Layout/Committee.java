@@ -73,7 +73,6 @@ public class Committee extends Activity {
 
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         materialMenuView = (MaterialMenuView) findViewById(R.id.action_bar_menu);
-      //  materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
         materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
 
         progress=(RelativeLayout)findViewById(R.id.relativelayout_proress);
@@ -104,8 +103,7 @@ public class Committee extends Activity {
         ListView navigationList = (ListView) findViewById(R.id.listView_navigation);
 
         navigationList.setAdapter(adapter);
-       // realmConfig = new RealmConfiguration.Builder(this) .deleteRealmIfMigrationNeeded().build();
-        //mRealm = Realm.getInstance(realmConfig);
+
 
         Realm.init(this);
 
@@ -117,12 +115,10 @@ public class Committee extends Activity {
             public void onClick(View v) {
                 if (a == 0) {
                     dLayout.openDrawer(Gravity.LEFT);
-                  //  materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.ARROW);
                     materialMenuView.animateIconState(MaterialMenuDrawable.IconState.ARROW);
                     a = 1;
                 } else {
                     dLayout.closeDrawer(Gravity.LEFT);
-                 //   materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
                     materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
                     a = 0;
                 }
@@ -143,13 +139,11 @@ public class Committee extends Activity {
 
             @Override
             public void onDrawerOpened(View arg0) {
-             //   materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.ARROW);
                 materialMenuView.animateIconState(MaterialMenuDrawable.IconState.ARROW);
             }
 
             @Override
             public void onDrawerClosed(View arg0) {
-              //  materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
                 materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
             }
 
@@ -259,7 +253,7 @@ public class Committee extends Activity {
         protected Void doInBackground(Void... arg0) {
             try {
                 OkHttpClient client = new OkHttpClient();
-                Request request = new Request.Builder().url("http://himanshufernando.com/App/OBA/php/committee.php").build();
+                Request request = new Request.Builder().url("http://www.marisstellaoba.com/App/php/committee.php").build();
                 Response responses = null;
 
                 responses = client.newCall(request).execute();

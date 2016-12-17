@@ -42,7 +42,6 @@ import tkhub.project.mscoba.R;
  * Created by Himanshu on 2/1/2016.
  */
 public class Membership extends Activity implements Animation.AnimationListener {
-    private static final int MEGABYTE = 1024 * 1024;
     private MaterialMenuView materialMenuView;
     DrawerLayout dLayout;
     int a;
@@ -306,9 +305,10 @@ public class Membership extends Activity implements Animation.AnimationListener 
         textsix.startAnimation(animMovetext_6);
 
 
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
 
+        download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 new MaterialStyledDialog.Builder(Membership.this)
                         .withDialogAnimation(true)
                         .setHeaderColor(R.color.colorPrimary)
@@ -322,15 +322,6 @@ public class Membership extends Activity implements Animation.AnimationListener 
                             }
                         })
                         .show();
-
-            }
-        }, 5400);
-
-
-        download.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // new getGalleyOffline().execute();
             }
         });
 
@@ -352,82 +343,6 @@ public class Membership extends Activity implements Animation.AnimationListener 
 
     }
 
-    private class getGalleyOffline extends AsyncTask<Void, Void, Void> {
-
-        LoadToast lt = new LoadToast(Membership.this);
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
-            lt.setText("Downloading ");
-            lt.setTranslationY(400);
-            lt.setTextColor(getResources().getColor(R.color.myWhite)).setBackgroundColor(getResources().getColor(R.color.myBlue)).setProgressColor(getResources().getColor(R.color.myWhite));
-            lt.show();
-        }
-
-        @Override
-        protected Void doInBackground(Void... arg0) {
-
-            File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "OBA_Aplication_Form.pdf");
-            try {
-                file.createNewFile();
-
-            } catch (IOException e1) {
-                e1.printStackTrace();
-                lt.error();
-            }
-            Downloader.DownloadFile("http://www.himanshufernando.com/App/OBA/pdf/Christmas%20Carnival%20Letter.pdf", file);
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-            lt.success();
-            new Handler().postDelayed(new Runnable() {
-                public void run() {
-
-                    new MaterialStyledDialog.Builder(Membership.this)
-                            .withDialogAnimation(true)
-                            .setHeaderColor(R.color.myBlue)
-                            .setTitle("Download Complete!")
-                            .setDescription("Find a file you have downloaded on Download Folder")
-                            .setPositiveText("OK")
-                            .onPositive(new MaterialDialog.SingleButtonCallback() {
-                                @Override
-                                public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
-                                    dialog.dismiss();
-                                }
-                            })
-                            .show();
-
-
-
-
-
-
-
-
-                    /*
-                    MaterialStyledDialog dialog = new MaterialStyledDialog(Membership.this)
-                            .setHeaderColor(R.color.myBlue)
-                            .setTitle("Download Complete!")
-                            .setDescription("Find a file you have downloaded on Download Folder")
-                            .setPositive("Ok", new MaterialDialog.SingleButtonCallback() {
-                                @Override
-                                public void onClick(MaterialDialog dialog, DialogAction which) {
-                                    dialog.dismiss();
-                                }
-                            })
-                            .build();
-
-                    dialog.show();*/
-                }
-            }, 1000);
-        }
-
-    }
 
     @Override
     public void onBackPressed() {

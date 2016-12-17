@@ -65,13 +65,13 @@ TextView name,membershino,nic,address,landnumber,moblie,email;
                 });
 
 
-        name.setText("Name : "+"W.H.FERANANDO");
+      /*  name.setText("Name : "+"W.H.FERANANDO");
         membershino.setText("Mem No : "+"LM/F/628 - 1925");
         nic.setText("NIC No : "+"892631093V");
         address.setText("Address : "+"167/5 St.Niclas Rd,Negombo.");
         landnumber.setText("Phone No : "+"+94 312 233 748");
         moblie.setText("Mobile No : "+"+94 716 607 483");
-        email.setText("Email : "+"himanshu.fernando@gmail.com");
+        email.setText("Email : "+"himanshu.fernando@gmail.com");*/
 
 
         ArrayList<NavigationItem> mNavItems = new ArrayList<NavigationItem>();

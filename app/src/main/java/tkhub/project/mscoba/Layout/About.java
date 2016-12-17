@@ -37,9 +37,6 @@ public class About extends Activity {
     DrawerLayout dLayout;
     int a;
 
-    private static final String SHOWCASE_ID = "About";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +44,6 @@ public class About extends Activity {
 
         dLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         materialMenuView = (MaterialMenuView) findViewById(R.id.action_bar_menu);
-       // materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
         materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
 
         layoutMsc=(RelativeLayout)findViewById(R.id.relativeLayout_MSC);
@@ -91,37 +87,17 @@ public class About extends Activity {
 
         mscIcon.setTextColor(getResources().getColor(R.color.myDarkBlu));
         mcsText.setTextColor(getResources().getColor(R.color.myDarkBlu));
-/*
-        ShowcaseConfig config = new ShowcaseConfig();
-        config.setDelay(300); // half second between each showcase view
 
-        MaterialShowcaseSequence sequence = new MaterialShowcaseSequence(this, SHOWCASE_ID);
-
-        sequence.setConfig(config);
-        sequence.addSequenceItem(image, "Welcome to About Us Page,Here you can find history of the school and OBA", "GOT IT");
-        sequence.addSequenceItem(layoutMsc,"About The School", "GOT IT");
-        sequence.addSequenceItem(layoutHistory, "History Of The School", "GOT IT");
-        sequence.addSequenceItem(layoutOba, "History Of The OBA", "GOT IT");
-        sequence.addSequenceItem(layoutDev, "About App Developer", "GOT IT");
-        sequence.start();*/
-
-
-
-
-
-
-            a = 0;
+        a = 0;
         materialMenuView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (a == 0) {
                     dLayout.openDrawer(Gravity.LEFT);
-                   // materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.ARROW);
                     materialMenuView.animateIconState(MaterialMenuDrawable.IconState.ARROW);
                     a = 1;
                 } else {
                     dLayout.closeDrawer(Gravity.LEFT);
-                   // materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
                     materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
                     a = 0;
                 }
@@ -142,13 +118,11 @@ public class About extends Activity {
 
             @Override
             public void onDrawerOpened(View arg0) {
-               // materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.ARROW);
                 materialMenuView.animateIconState(MaterialMenuDrawable.IconState.ARROW);
             }
 
             @Override
             public void onDrawerClosed(View arg0) {
-                //materialMenuView.animatePressedState(MaterialMenuDrawable.IconState.BURGER);
                 materialMenuView.animateIconState(MaterialMenuDrawable.IconState.BURGER);
             }
 
@@ -300,7 +274,16 @@ public class About extends Activity {
             }
         });
 
+        layoutDev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(About.this, TKHub.class);
+                Bundle bndlanimation = null;
+                bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+                startActivity(i, bndlanimation);
 
+            }
+        });
 
     }
 
