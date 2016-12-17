@@ -53,6 +53,8 @@
             </RelativeLayout>
 
         </RelativeLayout>
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -95,13 +97,13 @@
 
         </RelativeLayout>
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/relativeLayout3">
+            android:layout_below="@+id/relativeLayout3"
+            android:visibility="visible">
 
 
             <RelativeLayout
@@ -122,6 +124,7 @@
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
                     android:textColor="#000000" />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -130,8 +133,10 @@
                 android:layout_below="@+id/relativeLayout12"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true">
+
+
                 <RelativeLayout
-                    android:id="@+id/relativeLayout15"
+                    android:id="@+id/relativeLayoutCalander"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
@@ -146,7 +151,7 @@
                         android:paddingRight="10dp"
                         app:compactCalendarBackgroundColor="#dbdbdb"
                         app:compactCalendarCurrentDayBackgroundColor="@color/colorAccent"
-                        app:compactCalendarTextSize="17sp" />
+                        app:compactCalendarTextSize="15sp" />
 
                     <tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome
                         android:layout_width="wrap_content"
