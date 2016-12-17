@@ -83,7 +83,7 @@
                         <ImageView
                             android:id="@+id/imageView_fragment_news"
                             android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="200dp"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:src="@drawable/share"

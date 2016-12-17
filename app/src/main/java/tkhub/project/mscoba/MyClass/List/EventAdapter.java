@@ -48,8 +48,13 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
         holder.imageUrl=item.get(position).eventTumbimage;
 
         holder.eventTitel.setText(item.get(position).eventTitle);
-      //  holder.eventDate.setText(item.get(position).eventDuedate.substring(0, 10));
-        Picasso.with(mContext).load(holder.imageUrl).into(holder.eventtumbimage);
+
+        try {
+            Picasso.with(mContext).load(holder.imageUrl).into(holder.eventtumbimage);
+        }catch (Exception ex){
+
+        }
+
 
 
 

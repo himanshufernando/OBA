@@ -54,7 +54,14 @@ public class GalleryFullImageAdapter extends PagerAdapter {
         String imageUrl = imagePaths.get(position);
         imageViewGalleryFullImage =(ImageView) viewLayout.findViewById(R.id.imageView_Gallery_FullImage);
 
-        Picasso.with(activity).load(imageUrl).into(imageViewGalleryFullImage);
+
+
+
+        try {
+            Picasso.with(activity).load(imageUrl).into(imageViewGalleryFullImage);
+        }catch (Exception ex){
+
+        }
         ((ViewPager) container).addView(viewLayout);
 
         return viewLayout;

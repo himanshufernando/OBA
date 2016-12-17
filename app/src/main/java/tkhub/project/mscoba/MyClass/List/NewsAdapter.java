@@ -48,7 +48,12 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
         holder.titel.setText(item.get(position).titel);
         holder.textNew.setText("TODAY");
 
-        Picasso.with(mContext).load(item.get(position).image).into(holder.imageCover);
+
+        try {
+            Picasso.with(mContext).load(item.get(position).image).into(holder.imageCover);
+        }catch (Exception ex){
+
+        }
         holder.share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -13,7 +13,7 @@
     <tkhub.project.mscoba.MyClass.Font.FontHedar
         android:id="@+id/text_gallery_title"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:gravity="start"
         android:textAppearance="?android:attr/textAppearanceMedium"

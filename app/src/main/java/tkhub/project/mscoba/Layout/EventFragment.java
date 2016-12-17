@@ -60,7 +60,7 @@ public class EventFragment extends Activity {
         UrlImageViewHelper.setUrlDrawable(coverImage, intentNews.getStringExtra("url"), R.drawable.imagebackground);
         title.setText(intentNews.getStringExtra("title"));
         content.setText(intentNews.getStringExtra("content"));
-        date.setText("Date : "+intentNews.getStringExtra("date").substring(0, 10) + " " + intentNews.getStringExtra("time").substring(0, 4));
+        date.setText("Date : "+intentNews.getStringExtra("date").substring(0, 10) + " " + intentNews.getStringExtra("time").substring(0, 5));
         vanue.setText("Vanue : "+intentNews.getStringExtra("vanue"));
 
         MaterialMenuView materialMenuView = (MaterialMenuView) findViewById(R.id.action_bar_menu);

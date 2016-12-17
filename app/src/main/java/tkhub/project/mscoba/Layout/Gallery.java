@@ -293,6 +293,7 @@ public class Gallery extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
             progress.setVisibility(View.VISIBLE);
+
         }
 
         @Override
@@ -337,6 +338,7 @@ public class Gallery extends Activity {
                 album.setVisibility(View.VISIBLE);
                 progress.setVisibility(View.INVISIBLE);
                 layoutmain.setVisibility(View.INVISIBLE);
+                SimpleToast.info(Gallery.this, "Images Loading..");
             } else {
                 SimpleToast.error(Gallery.this, "No image in the sever");
             }
@@ -352,6 +354,7 @@ public class Gallery extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
             progress.setVisibility(View.VISIBLE);
+
         }
 
         @Override
@@ -386,6 +389,7 @@ public class Gallery extends Activity {
             progress.setVisibility(View.INVISIBLE);
             layoutmain.setVisibility(View.VISIBLE);
             album.setVisibility(View.INVISIBLE);
+            SimpleToast.info(Gallery.this, "Images Loading..");
         }
 
     }

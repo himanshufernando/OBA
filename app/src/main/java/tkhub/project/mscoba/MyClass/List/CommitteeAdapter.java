@@ -72,7 +72,11 @@ public class CommitteeAdapter extends PagerAdapter {
 
         quter.setText("\""+""+comiitequter.get(position)+""+"\"");
 
-        Picasso.with(_activity).load(ImageUrl).into(image);
+        try {
+            Picasso.with(_activity).load(ImageUrl).into(image);
+        }catch (Exception ex){
+
+        }
 
 
         ((ViewPager) container).addView(viewLayout);

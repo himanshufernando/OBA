@@ -64,7 +64,13 @@ public class GalleryAdapter extends BaseAdapter implements View.OnClickListener 
         ImageView coverimage =(ImageView)view.findViewById(R.id.image_gallery);
         TextView title=(TextView)view.findViewById(R.id.text_gallery_title);
 
-        Picasso.with(mContext).load(item.get(position).coverimage).into(coverimage);
+
+
+        try {
+            Picasso.with(mContext).load(item.get(position).coverimage).into(coverimage);
+        }catch (Exception ex){
+
+        }
 
         title.setText(item.get(position).title);
 

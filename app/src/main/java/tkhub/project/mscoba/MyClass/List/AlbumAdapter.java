@@ -59,8 +59,13 @@ public class AlbumAdapter extends BaseAdapter implements View.OnClickListener {
 
         ImageView coverimage =(ImageView)view.findViewById(R.id.image_gallery);
 
+        try {
+            Picasso.with(mContext).load( item.get(position).image).into(coverimage);
+        }catch (Exception ex){
 
-        Picasso.with(mContext).load( item.get(position).image).into(coverimage);
+        }
+
+
 
         view.setOnClickListener(new OnItemClickListener(position));
         return view;
