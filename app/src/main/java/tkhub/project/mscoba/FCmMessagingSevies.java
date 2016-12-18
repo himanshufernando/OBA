@@ -32,21 +32,6 @@ public class FCmMessagingSevies extends FirebaseMessagingService {
         String dsd =remoteMessage.getNotification().getTag();
         Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-       /* Intent intent = new Intent(this, News.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
-
-        notificationBuilder.setSmallIcon(R.mipmap.ic_launcher);
-        notificationBuilder.setContentTitle(titel);
-        notificationBuilder.setContentText(message);
-        notificationBuilder.setAutoCancel(true);
-        notificationBuilder.setSound(defaultSoundUri);
-        notificationBuilder.setContentIntent(pendingIntent);
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-        notificationManager.notify(0, notificationBuilder.build());*/
-
 
 
         NotificationCompat.Builder mBuilder =
@@ -74,15 +59,9 @@ public class FCmMessagingSevies extends FirebaseMessagingService {
 
         }
 
-
-
         mBuilder.setContentIntent(resultPendingIntent);
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
         mNotificationManager.notify(0, mBuilder.build());
-
-
-
         super.onMessageReceived(remoteMessage);
     }
 }
