@@ -221,6 +221,8 @@ public class News extends Activity implements Animation.AnimationListener {
                 }
                 if (position == 4) {
                     Intent i = new Intent(News.this, Gallery.class);
+                 //   Intent i = new Intent(News.this, Gallerytwo.class);
+
                     Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
                     finish();
                     startActivity(i, bndlanimation);

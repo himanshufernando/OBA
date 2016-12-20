@@ -81,7 +81,7 @@ public class FCMInsnaceIdSeervies extends FirebaseInstanceIdService {
                 Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
                 NotificationCompat.Builder mBuilder =
                         new NotificationCompat.Builder(FCMInsnaceIdSeervies.this)
-                                .setSmallIcon(R.mipmap.ic_launcher)
+                                .setSmallIcon(R.drawable.notificationlogo)
                                 .setContentTitle("Welcome")
                                 .setAutoCancel(true)
                                 .setSound(defaultSoundUri)

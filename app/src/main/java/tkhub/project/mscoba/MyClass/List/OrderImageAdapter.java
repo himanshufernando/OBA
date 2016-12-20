@@ -13,22 +13,22 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import tkhub.project.mscoba.Layout.News;
+import tkhub.project.mscoba.Layout.Event;
+import tkhub.project.mscoba.Layout.Gallery;
 import tkhub.project.mscoba.R;
 
 
 /**
  * Created by Himanshu on 4/10/2015.
  */
-public class GalleryAdapterRecy extends RecyclerView.Adapter<GalleryAdapterRecy.MyViewHolder> implements View.OnClickListener {
+public class OrderImageAdapter extends RecyclerView.Adapter<OrderImageAdapter.MyViewHolder> implements View.OnClickListener {
 
     Context mContext;
     ArrayList<Galleryitem> item;
 
-    boolean status = false;
 
 
-    public GalleryAdapterRecy(Context mContext, ArrayList<Galleryitem> albumList) {
+    public OrderImageAdapter(Context mContext, ArrayList<Galleryitem> albumList) {
         this.mContext = mContext;
         this.item = albumList;
     }
@@ -44,13 +44,25 @@ public class GalleryAdapterRecy extends RecyclerView.Adapter<GalleryAdapterRecy.
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-        holder.titel.setText(item.get(position).title);
+
 
         try {
-            Picasso.with(mContext).load(item.get(position).coverimage).into(holder.imageCover);
+            Picasso.with(mContext).load(item.get(position).coverimage).into(holder.coverimage);
         }catch (Exception ex){
 
         }
+
+        holder.title.setText(item.get(position).title);
+
+
+        holder.coverimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((Gallery)mContext).lodeAlbum(item.get(position).id,item.get(position).coverimage);
+            }
+        });
+
+
 
     }
 
@@ -60,20 +72,20 @@ public class GalleryAdapterRecy extends RecyclerView.Adapter<GalleryAdapterRecy.
     }
 
     @Override
-    public void onClick(View v) {
-        System.out.println("sssdsdsdsdsdsdsdsd");
+    public void onClick(View v){
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        ImageView imageCover;
-        TextView titel;
+        ImageView coverimage;
+        TextView title;
+
 
         public MyViewHolder(View itemView) {
             super(itemView);
+            title = (TextView) itemView.findViewById(R.id.text_gallery_title);
+            coverimage =(ImageView)itemView.findViewById(R.id.image_gallery);
 
-            imageCover = (ImageView) itemView.findViewById(R.id.image_gallery);
-            titel = (TextView) itemView.findViewById(R.id.text_gallery_title);
 
         }
 

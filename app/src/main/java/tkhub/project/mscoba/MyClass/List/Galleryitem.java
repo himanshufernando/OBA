@@ -12,4 +12,6 @@ public class Galleryitem {
         this.coverimage = coverimage;
         this.title = title;
     }
+
+
 }

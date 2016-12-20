@@ -36,7 +36,7 @@ public class FCmMessagingSevies extends FirebaseMessagingService {
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setSmallIcon(R.drawable.notificationlogo)
                         .setContentTitle(titel)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)

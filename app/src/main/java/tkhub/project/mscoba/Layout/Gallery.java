@@ -15,6 +15,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -42,11 +45,11 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import tkhub.project.mscoba.MyClass.List.AlbumAdapter;
 import tkhub.project.mscoba.MyClass.List.Albumitem;
-import tkhub.project.mscoba.MyClass.List.GalleryAdapter;
 import tkhub.project.mscoba.MyClass.List.GalleryFullImageAdapter;
 import tkhub.project.mscoba.MyClass.List.Galleryitem;
 import tkhub.project.mscoba.MyClass.List.NavigationAdapter;
 import tkhub.project.mscoba.MyClass.List.NavigationItem;
+import tkhub.project.mscoba.MyClass.List.OrderImageAdapter;
 import tkhub.project.mscoba.R;
 
 /**
@@ -65,22 +68,34 @@ public class Gallery extends Activity {
     AlbumAdapter albumAdapter;
     ArrayList<Albumitem> albumItem = new ArrayList<Albumitem>();
 
-    GalleryAdapter galleryadapter;
+
+    OrderImageAdapter orderImageAdapter;
     ArrayList<Galleryitem> galleryItems = new ArrayList<Galleryitem>();
 
-    GridView gridView, grodViewAlbum;
+    GridView  grodViewAlbum;
     ArrayList<String> groupImages;
     GalleryFullImageAdapter galleryFullImageAdapter;
+
+    RecyclerView recyclerView_main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_gallery);
 
-        gridView = (GridView) findViewById(R.id.gridView);
+
+        recyclerView_main=(RecyclerView)findViewById(R.id.list_image);
+
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this,2);
+
+        recyclerView_main.setLayoutManager(mLayoutManager);
+
+
         grodViewAlbum = (GridView) findViewById(R.id.gridView_album);
 
-        galleryadapter = new GalleryAdapter(this, galleryItems);
+        orderImageAdapter= new OrderImageAdapter(this,galleryItems);
+
+
         albumAdapter = new AlbumAdapter(this, albumItem);
 
         groupImages = new ArrayList<String>();
@@ -385,7 +400,7 @@ public class Gallery extends Activity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-            gridView.setAdapter(galleryadapter);
+            recyclerView_main.setAdapter(orderImageAdapter);
             progress.setVisibility(View.INVISIBLE);
             layoutmain.setVisibility(View.VISIBLE);
             album.setVisibility(View.INVISIBLE);

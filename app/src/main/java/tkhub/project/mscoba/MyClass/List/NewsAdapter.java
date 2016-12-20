@@ -71,6 +71,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
 
             }
         });
+        System.out.println("NewsAdapter 123 :"+item.get(position).titel);
 
       //  view.setOnClickListener(new OnItemClickListener(position));
     }
