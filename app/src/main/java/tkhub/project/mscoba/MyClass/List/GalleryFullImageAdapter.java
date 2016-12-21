@@ -10,10 +10,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import tkhub.project.mscoba.MyClass.Servies.CustomVolleyRequest;
 import tkhub.project.mscoba.R;
 
 
@@ -27,7 +30,7 @@ public class GalleryFullImageAdapter extends PagerAdapter {
     private ArrayList<String> imagePaths;
     private LayoutInflater inflater;
 
-    private ImageView imageViewGalleryFullImage;
+    private NetworkImageView imageViewGalleryFullImage;
 
     // constructor
     public GalleryFullImageAdapter(Activity activity, ArrayList<String> imagePaths) {
@@ -52,16 +55,19 @@ public class GalleryFullImageAdapter extends PagerAdapter {
         inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View viewLayout = inflater.inflate(R.layout.list_gallery_fullimages, container, false);
         String imageUrl = imagePaths.get(position);
-        imageViewGalleryFullImage =(ImageView) viewLayout.findViewById(R.id.imageView_Gallery_FullImage);
+        imageViewGalleryFullImage =(NetworkImageView) viewLayout.findViewById(R.id.imageView_Gallery_FullImage);
 
+        ImageLoader imageLoader;
+        imageLoader = CustomVolleyRequest.getInstance(activity).getImageLoader();
+        imageLoader.get(imagePaths.get(position), ImageLoader.getImageListener(imageViewGalleryFullImage, R.drawable.imagebackground, android.R.drawable.ic_dialog_alert));
+        imageViewGalleryFullImage.setImageUrl(imagePaths.get(position), imageLoader);
 
-
-
-        try {
+      /*  try {
             Picasso.with(activity).load(imageUrl).into(imageViewGalleryFullImage);
         }catch (Exception ex){
 
-        }
+        }*/
+
         ((ViewPager) container).addView(viewLayout);
 
         return viewLayout;

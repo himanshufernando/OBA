@@ -379,7 +379,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="40dip"
-                            android:src="@drawable/aboutthree" />
+                            android:src="@drawable/memberslo" />
 
                         <tkhub.project.mscoba.MyClass.Font.FontHedar
                             android:layout_width="wrap_content"

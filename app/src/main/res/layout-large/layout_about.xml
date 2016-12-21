@@ -99,7 +99,7 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/relativeLayout21"
-                android:layout_width="100dp"></RelativeLayout>
+                android:layout_width="150dp"></RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -229,8 +229,6 @@
                         android:background="#ffffff">
 
                         <com.mikhaellopez.circularimageview.CircularImageView
-                            android:layout_width="200dip"
-                            android:layout_height="200dip"
                             app:civ_border_color="@color/colorPrimary"
                             app:civ_border_width="4dp"
                             app:civ_shadow="true"
@@ -238,7 +236,9 @@
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dip"
-                            android:src="@drawable/aboutone" />
+                            android:src="@drawable/aboutone"
+                            android:layout_width="300dp"
+                            android:layout_height="300dp" />
 
                         <tkhub.project.mscoba.MyClass.Font.FontHedar
                             android:layout_width="wrap_content"
@@ -300,8 +300,6 @@
                         android:background="#ffffff">
 
                         <com.mikhaellopez.circularimageview.CircularImageView
-                            android:layout_width="200dip"
-                            android:layout_height="200dip"
                             app:civ_border_color="@color/colorPrimary"
                             app:civ_border_width="4dp"
                             app:civ_shadow="true"
@@ -309,7 +307,9 @@
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dip"
-                            android:src="@drawable/abouttwo" />
+                            android:src="@drawable/abouttwo"
+                            android:layout_width="300dp"
+                            android:layout_height="300dp" />
 
                         <tkhub.project.mscoba.MyClass.Font.FontHedar
                             android:layout_width="wrap_content"
@@ -378,7 +378,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dip"
-                            android:src="@drawable/aboutthree"
+                            android:src="@drawable/memberslo"
                             android:layout_height="300dp"
                             android:layout_width="300dp" />
 

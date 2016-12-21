@@ -65,18 +65,12 @@
             android:visibility="visible">
 
 
-            <GridView
-                android:id="@+id/gridView_album"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_album"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:columnWidth="200dip"
-                android:drawSelectorOnTop="true"
-                android:gravity="center"
-                android:numColumns="auto_fit"
-                android:stretchMode="columnWidth"
-                android:focusable="true"
-                android:clickable="true"
-                android:transitionGroup="false" />
+                />
+
 
         </RelativeLayout>
 
@@ -136,7 +130,7 @@
             android:id="@+id/relativeLayoutmain">
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/list_image"
+                android:id="@+id/recyclerView_gallery"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 />

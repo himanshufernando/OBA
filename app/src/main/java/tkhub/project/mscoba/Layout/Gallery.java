@@ -44,8 +44,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import tkhub.project.mscoba.MyClass.List.AlbumAdapter;
 import tkhub.project.mscoba.MyClass.List.Albumitem;
+import tkhub.project.mscoba.MyClass.List.GalleryAlbumAdapter;
 import tkhub.project.mscoba.MyClass.List.GalleryFullImageAdapter;
 import tkhub.project.mscoba.MyClass.List.Galleryitem;
 import tkhub.project.mscoba.MyClass.List.NavigationAdapter;
@@ -66,18 +66,18 @@ public class Gallery extends Activity {
     int a;
 
 
-    AlbumAdapter albumAdapter;
+   GalleryAlbumAdapter galleryAlbumAdapter;
     ArrayList<Albumitem> albumItem = new ArrayList<Albumitem>();
 
 
     GalleryAdapter galleryAdapter;
     ArrayList<Galleryitem> galleryItems = new ArrayList<Galleryitem>();
 
-    GridView  grodViewAlbum;
+
     ArrayList<String> groupImages;
     GalleryFullImageAdapter galleryFullImageAdapter;
 
-    RecyclerView recyclerView_main;
+    RecyclerView recyclerView_gallery,recyclerView_album;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,19 +85,21 @@ public class Gallery extends Activity {
         setContentView(R.layout.layout_gallery);
 
 
-        recyclerView_main=(RecyclerView)findViewById(R.id.list_image);
+        recyclerView_gallery=(RecyclerView)findViewById(R.id.recyclerView_gallery);
+        recyclerView_album=(RecyclerView)findViewById(R.id.recyclerView_album);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this,2);
+        RecyclerView.LayoutManager mLayoutManager_album = new GridLayoutManager(this,4);
 
-        recyclerView_main.setLayoutManager(mLayoutManager);
+        recyclerView_gallery.setLayoutManager(mLayoutManager);
+        recyclerView_album.setLayoutManager(mLayoutManager_album);
 
 
-        grodViewAlbum = (GridView) findViewById(R.id.gridView_album);
 
         galleryAdapter = new GalleryAdapter(this,galleryItems);
+        galleryAlbumAdapter = new GalleryAlbumAdapter(this,albumItem);
 
 
-        albumAdapter = new AlbumAdapter(this, albumItem);
 
         groupImages = new ArrayList<String>();
 
@@ -272,7 +274,6 @@ public class Gallery extends Activity {
             new getGalleyAlbum().execute(id,coverurl);
         }
 
-
     }
 
     public void lodeAlbumslider(String id, String imageUrl) {
@@ -282,23 +283,53 @@ public class Gallery extends Activity {
         if (netInfo == null) {
             showDialogNoInernet(this);
         } else {
-
-            groupImages.add(0, imageUrl);
-            final Dialog dialogGallery = new Dialog(Gallery.this);
-            dialogGallery.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialogGallery.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(0, 0, 0, 0)));
-            dialogGallery.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialogGallery.setContentView(R.layout.dialog_gallery);
-            ViewPager viewPager = (ViewPager) dialogGallery.findViewById(R.id.imageSlideShow);
-            galleryFullImageAdapter = new GalleryFullImageAdapter(Gallery.this, groupImages);
-            viewPager.setAdapter(galleryFullImageAdapter);
-            dialogGallery.setCancelable(true);
-            dialogGallery.show();
+         new loadAlbum(imageUrl).execute();
         }
 
 
     }
 
+    private class loadAlbum extends AsyncTask<String, Void, Void> {
+        String imageUrl;
+        Dialog dialogGallery;
+        ViewPager viewPager;
+        public loadAlbum(String imageUrl) {
+            this.imageUrl = imageUrl;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            dialogGallery = new Dialog(Gallery.this);
+            dialogGallery.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialogGallery.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(0, 0, 0, 0)));
+            dialogGallery.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialogGallery.setContentView(R.layout.dialog_gallery);
+            viewPager = (ViewPager) dialogGallery.findViewById(R.id.imageSlideShow);
+        }
+
+        @Override
+        protected Void doInBackground(String... params) {
+            try {
+                groupImages.add(0, imageUrl);
+                galleryFullImageAdapter = new GalleryFullImageAdapter(Gallery.this, groupImages);
+
+            } catch (Exception ex){
+
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+            viewPager.setAdapter(galleryFullImageAdapter);
+            dialogGallery.setCancelable(true);
+            dialogGallery.show();
+
+        }
+
+    }
 
     private class getGalleyAlbum extends AsyncTask<String, Void, Void> {
         JSONObject object;
@@ -328,7 +359,6 @@ public class Gallery extends Activity {
                 groupImages.clear();
                 groupImages.add(0, params[1]);
                 albumItem.clear();
-
                 for (int i = 0; i < Jarray.length(); i++) {
                     object = Jarray.getJSONObject(i);
                     albumItem.add(new Albumitem(object.getString("galleryid"), object.getString("galleryalbumimage")));
@@ -353,7 +383,8 @@ public class Gallery extends Activity {
             super.onPostExecute(result);
 
             if (res == true) {
-                grodViewAlbum.setAdapter(albumAdapter);
+
+                recyclerView_album.setAdapter(galleryAlbumAdapter);
                 album.setVisibility(View.VISIBLE);
                 progress.setVisibility(View.INVISIBLE);
                 layoutmain.setVisibility(View.INVISIBLE);
@@ -404,7 +435,7 @@ public class Gallery extends Activity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-            recyclerView_main.setAdapter(galleryAdapter);
+            recyclerView_gallery.setAdapter(galleryAdapter);
             progress.setVisibility(View.INVISIBLE);
             layoutmain.setVisibility(View.VISIBLE);
             album.setVisibility(View.INVISIBLE);

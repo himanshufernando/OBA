@@ -219,6 +219,7 @@ public class About extends Activity {
 
             @Override
             public void onClick(View v) {
+
                 historyIcon.setTextColor(getResources().getColor(R.color.myDarkBlu));
                 historyText.setTextColor(getResources().getColor(R.color.myDarkBlu));
                 obaIcon.setTextColor(getResources().getColor(R.color.myWhite));

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <devices>
+          <device id="Nexus 7 2013" />
+        </devices>
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
@@ -10,29 +14,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05122f35-b36f-4105-b0ce-939e12dc37c6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAlbumAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/Servies/CustomVolleyRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/list_cardview_gallery.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/list_cardview_gallery.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/list_cardview_gallery.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/AlbumAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/grid_item_gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/grid_item_gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/grid_item_gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_cardview_gallery.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/FCMInsnaceIdSeervies.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/FCMInsnaceIdSeervies.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Event.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/EventCalendar.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/EventCalendar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/EventFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/EventFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/About.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/About.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Membership.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Membership.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/News.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/News.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewslattarsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewslattarsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Share.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Share.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/CommitteeAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/CommitteeAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/EventAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/EventAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryFullImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryFullImageAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/NewsAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/NewsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/fragment_event.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/fragment_event.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/fragment_event.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/fragment_event.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/grid_item_gallery_album.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/grid_item_gallery_album.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/layout_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/layout_about.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/grid_item_gallery_album.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/grid_item_gallery_album.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_about.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/fragment_event.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/fragment_event.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/grid_item_gallery_album.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/grid_item_gallery_album.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_about.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_newslatters.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_newslatters.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/OrderImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_gallery_fullimages.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_gallery_fullimages.xml" />
     </list>
     <ignored path="MSCOBA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,6 +74,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="ASClass" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,6 +129,11 @@
                 <option name="description" value="Displays the sub-projects of root project 'MSCOBA'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.volley:volley:1.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidVolleyVolley100Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1273,6 +1293,11 @@
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.volley:volley:1.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidVolleyVolley100Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformClassesAndResourcesWithProguardForRelease" />
               </ExternalTaskPojo>
@@ -2407,7 +2432,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="E:\Project\Android\Personal\MSCOBA\MSCOBA" value="4440226662633" />
+        <entry key="E:\Project\Android\Personal\MSCOBA\MSCOBA" value="4440233538806" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2747,27 +2772,44 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_newslatters.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/EventCalendar.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewslattarsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Membership.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Share.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/CommitteeAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryFullImageAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/NewsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/EventAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/FCMInsnaceIdSeervies.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/fragment_event.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/EventFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/fragment_event.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-large/fragment_event.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/News.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Event.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/EventAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAlubumAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/Servies/CustomVolleyRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/list_cardview_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/list_cardview_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/list_cardview_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/grid_item_gallery_album.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/grid_item_gallery_album.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/grid_item_gallery_album.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAlbumAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_gallery_fullimages.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAlbumFullAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryFullImageAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/layout_about.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_about.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/About.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/layout_about.xml" />
       </list>
     </option>
   </component>
@@ -2825,6 +2867,38 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSCOBA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSCOBA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2856,6 +2930,54 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="mscoba" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSCOBA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mscoba" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyClass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MSCOBA" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mscoba" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyClass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="List" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2890,9 +3012,15 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="CB5A1TLS5Z" />
+    <property name="device.picker.selection" value="30041a91a20d3100" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Channel Bridge/ChannelBridge" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlEditorPanel.WIDTH" value="328" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tkhub.project.mscoba.MyClass.List" />
+    </key>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -3229,7 +3357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482231867605</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2016-12-21">
+      <created>1482329230670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482329230670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3239,7 +3374,7 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12116041" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.044368602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3257,7 +3392,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3267,7 +3403,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3283,7 +3418,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2016-12-20 recycal to gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="2016-12-20 recycal to gallery" />
+    <MESSAGE value="2016-12-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="2016-12-21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3305,213 +3441,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Membership.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Share.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2873">
-          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="18" selection-start-line="137" selection-start-column="8" selection-end-line="141" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="18" selection-start-line="137" selection-start-column="8" selection-end-line="141" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="18" selection-start-line="137" selection-start-column="8" selection-end-line="141" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/Galleryitem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/Albumitem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/AlbumAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_newslatters.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -3577,24 +3506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/CommitteeAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryFullImageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="63" column="9" selection-start-line="59" selection-start-column="7" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/NewsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-459">
@@ -3611,28 +3522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/EventAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Splash.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/FCMInsnaceIdSeervies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -3680,26 +3573,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="77" column="61" selection-start-line="77" selection-start-column="61" selection-end-line="77" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/News.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="340" column="0" selection-start-line="339" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3710,6 +3587,368 @@
           <caret line="281" column="271" selection-start-line="281" selection-start-column="271" selection-end-line="281" selection-end-column="271" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/grid_item_gallery.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/Albumitem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/CommitteeAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/EventAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/Eventitem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/FCmMessagingSevies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/FCMInsnaceIdSeervies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_cardview_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/layout_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/Servies/JsonServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/Servies/CustomVolleyRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1034#1050#0" expanded="false" />
+            <element signature="e#1143#1144#0" expanded="false" />
+            <element signature="e#1212#1213#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1385#1386#0" expanded="false" />
+            <element signature="e#2073#2074#0" expanded="false" />
+            <element signature="e#2107#2108#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/list_cardview_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/list_cardview_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/grid_item_gallery_album.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/grid_item_gallery_album.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/grid_item_gallery_album.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/list_cardview_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_gallery_fullimages.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/AlbumAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAlbumFullAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAlbumAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryFullImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/GalleryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/Gallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1086">
+          <caret line="360" column="34" selection-start-line="360" selection-start-column="34" selection-end-line="360" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3275#3291#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/layout_gallery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/layout_about.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/list_about.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/MyClass/List/AboutAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="53" column="62" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/tkhub/project/mscoba/Layout/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+          <folding>
+            <element signature="e#9352#10151#0" expanded="true" />
+            <element signature="e#10150#10151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/list_about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/layout_about.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/layout_about.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
