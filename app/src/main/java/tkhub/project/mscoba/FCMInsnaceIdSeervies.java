@@ -42,7 +42,7 @@ public class FCMInsnaceIdSeervies extends FirebaseInstanceIdService {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        new saveToken().execute();
+      //  new saveToken().execute();
     }
 
     private class saveToken extends AsyncTask<String, Void, Void> {

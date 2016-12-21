@@ -207,12 +207,7 @@ share=(Button)findViewById(R.id.buttonshare);
 
         conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         netInfo = conMgr.getActiveNetworkInfo();
-        final Uri uri = Uri.parse("android.resource://oba.msc.himanshu.mscoba/drawable/logo");
-        try {
-            InputStream stream = getContentResolver().openInputStream(uri);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+
 
         share.setOnClickListener(new View.OnClickListener() {
             @Override

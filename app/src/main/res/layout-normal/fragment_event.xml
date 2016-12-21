@@ -148,6 +148,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:textColor="@color/myBlack"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="Medium Text"
                                 android:id="@+id/textView_fragment_event_date"
@@ -209,6 +210,7 @@
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="Medium Text"
+                                android:textColor="@color/myBlack"
                                 android:id="@+id/textView_fragment_event_vanue"
                                 android:layout_centerVertical="true"
                                 android:layout_toRightOf="@+id/relativeLayout11"

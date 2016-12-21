@@ -4,11 +4,10 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.os.AsyncTask;
+
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
+
 import android.support.annotation.NonNull;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
@@ -26,15 +25,12 @@ import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 
-import net.steamcrafted.loadtoast.LoadToast;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 import tkhub.project.mscoba.MyClass.List.NavigationAdapter;
 import tkhub.project.mscoba.MyClass.List.NavigationItem;
-import tkhub.project.mscoba.MyClass.Servies.Downloader;
+
 import tkhub.project.mscoba.R;
 
 

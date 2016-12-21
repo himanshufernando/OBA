@@ -1,14 +1,13 @@
 package tkhub.project.mscoba.MyClass.List;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -18,82 +17,79 @@ import tkhub.project.mscoba.R;
 
 
 /**
- * Created by Himanshu on 1/28/2016.
+ * Created by Himanshu on 4/10/2015.
  */
-public class GalleryAdapter extends BaseAdapter implements View.OnClickListener {
-        private Context mContext;
+public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.MyViewHolder> implements View.OnClickListener {
 
-        ArrayList<Galleryitem> item;
+    Context mContext;
+    ArrayList<Galleryitem> item;
 
 
-    public GalleryAdapter(Context context, ArrayList<Galleryitem> AReworditem) {
-        mContext = context;
-        item = AReworditem;
 
-    }
-
-    @Override
-    public int getCount() {
-        return item.size();
-    }
-
-    @Override
-    public Object getItem(int i) {
-        return item.get(i);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return 0;
+    public GalleryAdapter(Context mContext, ArrayList<Galleryitem> albumList) {
+        this.mContext = mContext;
+        this.item = albumList;
     }
 
 
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View view;
-        if (convertView == null) {
-            LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.grid_item_gallery, null);
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item_gallery, parent, false);
 
+        return new MyViewHolder(itemView);
+    }
 
-        } else {
-            view = convertView;
-
-        }
-
-        ImageView coverimage =(ImageView)view.findViewById(R.id.image_gallery);
-        TextView title=(TextView)view.findViewById(R.id.text_gallery_title);
-
+    @Override
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
 
 
         try {
-            Picasso.with(mContext).load(item.get(position).coverimage).into(coverimage);
+            Picasso.with(mContext).load(item.get(position).coverimage).into(holder.coverimage);
         }catch (Exception ex){
 
         }
 
-        title.setText(item.get(position).title);
+        holder.title.setText(item.get(position).title);
 
-        view.setOnClickListener(new OnItemClickListener(position));
-        return view;
+
+        holder.coverimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((Gallery)mContext).lodeAlbum(item.get(position).id,item.get(position).coverimage);
+            }
+        });
+
+
+
     }
-
 
     @Override
-    public void onClick(View v) {
-
+    public int getItemCount() {
+        return item.size();
     }
-    private class OnItemClickListener implements View.OnClickListener {
-        private int mPosition;
 
-        OnItemClickListener(int position) {
-            mPosition = position;
+    @Override
+    public void onClick(View v){
+    }
+
+    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        ImageView coverimage;
+        TextView title;
+
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            title = (TextView) itemView.findViewById(R.id.text_gallery_title);
+            coverimage =(ImageView)itemView.findViewById(R.id.image_gallery);
+
+
         }
 
-        @Override
-        public void onClick(View arg0) {
 
-            ((Gallery)mContext).lodeAlbum(item.get(mPosition).id,item.get(mPosition).coverimage);
+        @Override
+        public void onClick(View v) {
 
         }
 

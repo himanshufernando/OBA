@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -27,12 +27,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
     ArrayList<Eventitem> item;
 
 
-
     public EventAdapter(Context mContext, ArrayList<Eventitem> albumList) {
         this.mContext = mContext;
         this.item = albumList;
     }
-
 
 
     @Override

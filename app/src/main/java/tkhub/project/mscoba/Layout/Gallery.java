@@ -16,7 +16,6 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
@@ -29,13 +28,15 @@ import android.widget.RelativeLayout;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
-import com.github.pierry.simpletoast.SimpleToast;
+
+import com.sdsmdg.tastytoast.TastyToast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 
 import okhttp3.FormBody;
@@ -49,7 +50,7 @@ import tkhub.project.mscoba.MyClass.List.GalleryFullImageAdapter;
 import tkhub.project.mscoba.MyClass.List.Galleryitem;
 import tkhub.project.mscoba.MyClass.List.NavigationAdapter;
 import tkhub.project.mscoba.MyClass.List.NavigationItem;
-import tkhub.project.mscoba.MyClass.List.OrderImageAdapter;
+import tkhub.project.mscoba.MyClass.List.GalleryAdapter;
 import tkhub.project.mscoba.R;
 
 /**
@@ -69,7 +70,7 @@ public class Gallery extends Activity {
     ArrayList<Albumitem> albumItem = new ArrayList<Albumitem>();
 
 
-    OrderImageAdapter orderImageAdapter;
+    GalleryAdapter galleryAdapter;
     ArrayList<Galleryitem> galleryItems = new ArrayList<Galleryitem>();
 
     GridView  grodViewAlbum;
@@ -93,7 +94,7 @@ public class Gallery extends Activity {
 
         grodViewAlbum = (GridView) findViewById(R.id.gridView_album);
 
-        orderImageAdapter= new OrderImageAdapter(this,galleryItems);
+        galleryAdapter = new GalleryAdapter(this,galleryItems);
 
 
         albumAdapter = new AlbumAdapter(this, albumItem);
@@ -334,6 +335,9 @@ public class Gallery extends Activity {
                     groupImages.add(i + 1, object.getString("galleryalbumimage"));
                 }
                 res = true;
+            } catch (SocketTimeoutException sec){
+                res = false;
+                TastyToast.makeText(getApplicationContext(), "Server busy,please try again !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
             } catch (IOException e) {
                 e.printStackTrace();
                 res = false;
@@ -353,9 +357,9 @@ public class Gallery extends Activity {
                 album.setVisibility(View.VISIBLE);
                 progress.setVisibility(View.INVISIBLE);
                 layoutmain.setVisibility(View.INVISIBLE);
-                SimpleToast.info(Gallery.this, "Images Loading..");
+                TastyToast.makeText(getApplicationContext(), "Images Loading !", TastyToast.LENGTH_LONG, TastyToast.INFO);
             } else {
-                SimpleToast.error(Gallery.this, "No image in the sever");
+                TastyToast.makeText(getApplicationContext(), "No image in the sever !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
             }
 
         }
@@ -400,11 +404,12 @@ public class Gallery extends Activity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-            recyclerView_main.setAdapter(orderImageAdapter);
+            recyclerView_main.setAdapter(galleryAdapter);
             progress.setVisibility(View.INVISIBLE);
             layoutmain.setVisibility(View.VISIBLE);
             album.setVisibility(View.INVISIBLE);
-            SimpleToast.info(Gallery.this, "Images Loading..");
+            TastyToast.makeText(getApplicationContext(), "Images Loading !", TastyToast.LENGTH_LONG, TastyToast.INFO);
+
         }
 
     }

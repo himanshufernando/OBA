@@ -25,8 +25,9 @@ import android.widget.Toast;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
-import com.github.pierry.simpletoast.SimpleToast;
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
+
+import com.sdsmdg.tastytoast.TastyToast;
+import com.squareup.picasso.Picasso;
 
 import java.util.Calendar;
 import java.util.TimeZone;
@@ -57,9 +58,17 @@ public class EventFragment extends Activity {
         final RelativeLayout iconLocation = (RelativeLayout) findViewById(R.id.relative_event_map);
         intentNews = getIntent();
 
-        UrlImageViewHelper.setUrlDrawable(coverImage, intentNews.getStringExtra("url"), R.drawable.imagebackground);
+        try {
+            Picasso.with(this).load(intentNews.getStringExtra("url")).into(coverImage);
+        }catch (Exception ex){
+
+        }
+
         title.setText(intentNews.getStringExtra("title"));
         content.setText(intentNews.getStringExtra("content"));
+
+
+
         date.setText("Date : "+intentNews.getStringExtra("date").substring(0, 10) + " " + intentNews.getStringExtra("time").substring(0, 5));
         vanue.setText("Vanue : "+intentNews.getStringExtra("vanue"));
 
@@ -140,7 +149,7 @@ public class EventFragment extends Activity {
 
 
         if (result==true) {
-            SimpleToast.error(this, "Event already in your Calendar");
+            TastyToast.makeText(getApplicationContext(), "Event already in your Calendar !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
         } else {
             final ContentValues event = new ContentValues();
             event.put(CalendarContract.Events.CALENDAR_ID, 1);
@@ -207,7 +216,7 @@ public class EventFragment extends Activity {
             } catch (SQLiteException d) {
 
             }
-            SimpleToast.ok(this, "Event added to your Calendar");
+            TastyToast.makeText(getApplicationContext(), "Event already in your Calendar !", TastyToast.LENGTH_LONG, TastyToast.SUCCESS);
 
         }
     }

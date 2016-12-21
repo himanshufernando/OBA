@@ -26,9 +26,10 @@ import android.widget.Toast;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
-import com.github.pierry.simpletoast.SimpleToast;
+
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
+import com.sdsmdg.tastytoast.TastyToast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -290,7 +291,7 @@ public class EventCalendar extends FragmentActivity {
                 if(abalbleStatus==true){
                     dialogBox.show();
                 }else {
-                    SimpleToast.info(EventCalendar.this,"No any event for this date");
+                    TastyToast.makeText(getApplicationContext(), "No any event for this date !", TastyToast.LENGTH_LONG, TastyToast.INFO);
 
                 }
 
@@ -412,7 +413,7 @@ public class EventCalendar extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 dialogBox.dismiss();
-                Toast.makeText(getApplicationContext(), "You will miss the latest update", Toast.LENGTH_LONG).show();
+                TastyToast.makeText(getApplicationContext(), "You will miss the latest update !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
             }
         });
 

@@ -28,12 +28,14 @@ import android.widget.Toast;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
+import com.sdsmdg.tastytoast.TastyToast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 
 import io.realm.Realm;
@@ -278,8 +280,10 @@ public class Event extends Activity {
                     object = Jarray.getJSONObject(i);
                     eventItems.add(new Eventitem(object.getString("eventid"), object.getString("eventname"), object.getString("eventcontent"),
                             object.getString("eventtumbimage"), object.getString("eventpublishdate"), object.getString("eventduedate"), object.getString("eventvenue"), object.getString("eventtime"), object.getDouble("eventlatitude"), object.getDouble("eventlongitude")));
-
                 }
+
+            } catch (SocketTimeoutException socket){
+                TastyToast.makeText(getApplicationContext(), "Server busy,please try again !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (JSONException e) {

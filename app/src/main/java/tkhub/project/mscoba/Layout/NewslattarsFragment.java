@@ -20,7 +20,8 @@ import android.widget.TextView;
 
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
-import com.github.pierry.simpletoast.SimpleToast;
+import com.sdsmdg.tastytoast.TastyToast;
+
 
 import tkhub.project.mscoba.R;
 
@@ -81,7 +82,7 @@ text =(TextView)findViewById(R.id.textView2) ;
             });
 
             pdfwebvie.loadUrl("http://docs.google.com/gview?embedded=true&url=" + intentNews.getStringExtra("url"));
-            SimpleToast.info(NewslattarsFragment.this, "PDF Loading..");
+            TastyToast.makeText(getApplicationContext(), "PDF Loading !", TastyToast.LENGTH_LONG, TastyToast.INFO);
 
         }
 

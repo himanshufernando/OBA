@@ -1,36 +1,32 @@
 package tkhub.project.mscoba.Layout;
 
-import android.Manifest;
-import android.accounts.Account;
-import android.accounts.AccountManager;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Dialog;
 import android.app.NotificationManager;
 import android.content.Context;
-import android.content.DialogInterface;
+
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
+
 import android.graphics.Color;
-import android.graphics.Rect;
+
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
+
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AlertDialog;
+
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Patterns;
+
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -45,8 +41,7 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.balysv.materialmenu.MaterialMenuDrawable;
 import com.balysv.materialmenu.MaterialMenuView;
-import com.getkeepsafe.taptargetview.TapTarget;
-import com.getkeepsafe.taptargetview.TapTargetSequence;
+
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 
 import org.json.JSONArray;
@@ -58,12 +53,12 @@ import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
+
 import jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout;
-import okhttp3.FormBody;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.RequestBody;
+
 import okhttp3.Response;
 import tkhub.project.mscoba.MyClass.DB.NewsDB;
 import tkhub.project.mscoba.MyClass.List.NavigationAdapter;
