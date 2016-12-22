@@ -29,7 +29,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/myBlack"
                 android:id="@+id/text_gallery_title" />
         </RelativeLayout>
