@@ -59,8 +59,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/relativeLayout3"
-            android:background="@color/myash">
+            android:layout_below="@+id/relativeLayout3">
 
             <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
                 android:id="@+id/main_swipe"
@@ -77,73 +76,6 @@
                     android:dividerHeight="20dip" />
 
             </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
-            <RelativeLayout
-                android:id="@+id/layout_shareicon_main"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:visibility="gone"
-                android:background="#B3FFFFFF">
-
-                <RelativeLayout
-                    android:id="@+id/realtivelayout_news_google"
-                    android:layout_width="70dip"
-                    android:layout_height="70dip"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
-                    >
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
-                        android:id="@+id/imageView_news_facebook"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/google"
-                        />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/realtivelayout_news_facebook"
-                    android:layout_width="70dip"
-                    android:layout_height="70dip"
-                    android:layout_alignTop="@+id/realtivelayout_news_google"
-                    android:layout_toLeftOf="@+id/realtivelayout_news_google"
-                    android:layout_toStartOf="@+id/realtivelayout_news_google">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/imageView4"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/facebook"
-                        android:visibility="visible" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/realtivelayout_news_twiter"
-                    android:layout_width="70dip"
-                    android:layout_height="70dip"
-                    android:layout_alignTop="@+id/realtivelayout_news_google"
-                    android:layout_toRightOf="@+id/realtivelayout_news_google"
-                    android:layout_toEndOf="@+id/realtivelayout_news_google"
-                    android:visibility="visible">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imageView5"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/twitter"
-                        android:visibility="visible" />
-                </RelativeLayout>
-            </RelativeLayout>
-
 
             <RelativeLayout
                 android:id="@+id/relativelayout_proress"
@@ -153,9 +85,6 @@
                 android:layout_centerHorizontal="true"
                 android:background="#FFFFFF"
                 android:visibility="visible">
-
-
-
                 <com.wang.avi.AVLoadingIndicatorView
                     android:id="@+id/avloadingIndicatorView"
                     app:indicator="SquareSpin"

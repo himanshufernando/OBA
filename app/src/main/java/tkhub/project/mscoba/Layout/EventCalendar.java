@@ -434,6 +434,7 @@ public class EventCalendar extends FragmentActivity {
 
 
         long timeInMillis = currentCalender.getTimeInMillis();
+
         compactCalendarView.addEvent(new Event(Color.RED,timeInMillis));
         compactCalendarView.addEvent(new Event(Color.RED,timeInMillis));
         compactCalendarView.addEvent(new Event(Color.RED,timeInMillis));

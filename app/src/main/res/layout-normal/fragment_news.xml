@@ -151,7 +151,7 @@
                                 android:text="@string/icon_circle"
                                 android:id="@+id/textView5"
                                 android:textSize="55dp"
-                                android:textColor="@color/colorAccent"
+                                android:textColor="@color/colorPrimaryDark"
                                 android:layout_centerVertical="true"
                                 android:layout_centerHorizontal="true" />
 
@@ -161,7 +161,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/icon_publishdate"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
+                                android:textColor="@color/myWhite"
                                 android:textSize="30dp"
                                 android:layout_centerVertical="true"
                                 android:layout_centerHorizontal="true" />

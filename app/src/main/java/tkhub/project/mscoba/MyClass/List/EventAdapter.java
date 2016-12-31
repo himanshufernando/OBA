@@ -10,11 +10,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 import tkhub.project.mscoba.Layout.Event;
+import tkhub.project.mscoba.MyClass.Servies.CustomVolleyRequest;
 import tkhub.project.mscoba.R;
 
 
@@ -44,27 +47,16 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
         holder.imageUrl=item.get(position).eventTumbimage;
-
         holder.eventTitel.setText(item.get(position).eventTitle);
 
-        try {
-            Picasso.with(mContext).load(holder.imageUrl).into(holder.eventtumbimage);
-        }catch (Exception ex){
 
-        }
+        holder.imageLoader = CustomVolleyRequest.getInstance(mContext).getImageLoader();
+        holder.imageLoader.get(item.get(position).eventTumbimage, ImageLoader.getImageListener(holder.eventtumbimage, R.drawable.imagebackground, android.R.drawable.ic_dialog_alert));
+        holder.eventtumbimage.setImageUrl(item.get(position).eventTumbimage, holder.imageLoader);
 
-
-
+        
 
         holder.eventtumbimage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((Event) mContext).lodeEvent(item.get(position).eventID, item.get(position).eventTumbimage, item.get(position).eventTitle, item.get(position).eventContent, item.get(position).eventDuedate, item.get(position).eventTime, item.get(position).eventVenue, item.get(position).eventLan, item.get(position).eventLon);
-
-
-            }
-        });
-        holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ((Event) mContext).lodeEvent(item.get(position).eventID, item.get(position).eventTumbimage, item.get(position).eventTitle, item.get(position).eventContent, item.get(position).eventDuedate, item.get(position).eventTime, item.get(position).eventVenue, item.get(position).eventLan, item.get(position).eventLon);
@@ -86,27 +78,21 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        ImageView eventtumbimage;
-       // TextView eventDate;
         TextView eventTitel;
-        RelativeLayout layout;
-
         String imageUrl;
+        private ImageLoader imageLoader;
+        NetworkImageView eventtumbimage;
 
 
         public MyViewHolder(View itemView) {
             super(itemView);
             eventTitel = (TextView) itemView.findViewById(R.id.textView_event_titel);
-           // eventDate = (TextView) itemView.findViewById(R.id.textView_event_content);
-            eventtumbimage =(ImageView)itemView.findViewById(R.id.imageView_event);
-            layout=(RelativeLayout)itemView.findViewById(R.id.relativeLayout9);
+            eventtumbimage =(NetworkImageView)itemView.findViewById(R.id.imageView_event);
 
         }
 
-
         @Override
         public void onClick(View v) {
-
         }
 
     }

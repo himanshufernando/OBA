@@ -57,14 +57,10 @@ public class CommitteeAdapter extends PagerAdapter {
         inflater = (LayoutInflater) _activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View viewLayout = inflater.inflate(R.layout.list_committee, container, false);
 
-
         TextView name =(TextView)viewLayout.findViewById(R.id.textView_comme_name);
         TextView post =(TextView)viewLayout.findViewById(R.id.textView_comme_post);
         TextView quter =(TextView)viewLayout.findViewById(R.id.textView_comm_quit);
         CircularImageView image=(CircularImageView) viewLayout.findViewById(R.id.imageView_comm_profile);
-
-
-
 
         name.setText(names.get(position));
         post.setText(comiitePost.get(position));
@@ -77,7 +73,6 @@ public class CommitteeAdapter extends PagerAdapter {
         }catch (Exception ex){
 
         }
-
 
         ((ViewPager) container).addView(viewLayout);
 

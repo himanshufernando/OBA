@@ -256,6 +256,7 @@ public class Event extends Activity {
 
     private class getEvent extends AsyncTask<Void, Void, Void> {
         JSONObject object;
+        int exceptionint =0;
 
         @Override
         protected void onPreExecute() {
@@ -283,10 +284,12 @@ public class Event extends Activity {
                 }
 
             } catch (SocketTimeoutException socket){
-                TastyToast.makeText(getApplicationContext(), "Server busy,please try again !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
+                exceptionint=1;
             } catch (IOException e) {
+                exceptionint=1;
                 e.printStackTrace();
             } catch (JSONException e) {
+                exceptionint=1;
                 e.printStackTrace();
             }
             return null;
@@ -295,11 +298,15 @@ public class Event extends Activity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
+            if(exceptionint==1) {
+                TastyToast.makeText(getApplicationContext(), "Server busy,please try again !", TastyToast.LENGTH_LONG, TastyToast.WARNING);
+            }else {
+                eventList.setAdapter(eventAdapter);
+                mWaveSwipeRefreshLayout.setRefreshing(false);
+                progress.setVisibility(View.INVISIBLE);
+                layoutmain.setVisibility(View.VISIBLE);
+            }
 
-            eventList.setAdapter(eventAdapter);
-            mWaveSwipeRefreshLayout.setRefreshing(false);
-            progress.setVisibility(View.INVISIBLE);
-            layoutmain.setVisibility(View.VISIBLE);
         }
 
     }

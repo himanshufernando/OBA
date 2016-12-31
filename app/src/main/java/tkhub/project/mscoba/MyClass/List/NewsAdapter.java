@@ -5,16 +5,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-import com.squareup.picasso.Picasso;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+
 
 import java.util.ArrayList;
 
 import tkhub.project.mscoba.Layout.News;
+import tkhub.project.mscoba.MyClass.Servies.CustomVolleyRequest;
 import tkhub.project.mscoba.R;
 
 
@@ -46,14 +49,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         holder.titel.setText(item.get(position).titel);
-        holder.textNew.setText("TODAY");
+        holder.imageLoader = CustomVolleyRequest.getInstance(mContext).getImageLoader();
+        holder.imageLoader.get(item.get(position).image, ImageLoader.getImageListener(holder.imageCover, R.drawable.imagebackground, android.R.drawable.ic_dialog_alert));
+        holder.imageCover.setImageUrl(item.get(position).image, holder.imageLoader);
 
-
-        try {
-            Picasso.with(mContext).load(item.get(position).image).into(holder.imageCover);
-        }catch (Exception ex){
-
-        }
         holder.share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,9 +70,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
 
             }
         });
-        System.out.println("NewsAdapter 123 :"+item.get(position).titel);
 
-      //  view.setOnClickListener(new OnItemClickListener(position));
     }
 
     @Override
@@ -83,25 +80,23 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
 
     @Override
     public void onClick(View v) {
-        System.out.println("sssdsdsdsdsdsdsdsd");
+
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        ImageView imageCover;
+
         TextView titel;
-        TextView textNew;
         RelativeLayout newNews;
-        String content, url;
         RelativeLayout share;
+        private ImageLoader imageLoader;
+        NetworkImageView imageCover;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            imageCover = (ImageView) itemView.findViewById(R.id.imageView_news);
+            imageCover = (NetworkImageView) itemView.findViewById(R.id.imageView_news);
             titel = (TextView) itemView.findViewById(R.id.textView_news_title);
-            textNew = (TextView) itemView.findViewById(R.id.textView_new);
-            newNews = (RelativeLayout) itemView.findViewById(R.id.relativelayout_new);
             share = (RelativeLayout) itemView.findViewById(R.id.relativeLayout_share);
         }
 
