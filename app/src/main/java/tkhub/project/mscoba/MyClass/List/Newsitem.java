@@ -64,4 +64,9 @@ public class Newsitem {
         this.url=url;
 
     }
+
+    public Newsitem(String iD, String image) {
+        this.iD = iD;
+        this.image = image;
+    }
 }

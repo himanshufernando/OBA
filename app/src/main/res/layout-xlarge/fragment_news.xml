@@ -79,8 +79,16 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:background="#00FFFFFF">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/list_news_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:divider="@color/myash"
+                            android:dividerHeight="10dip" />
 
-                        <ImageView
+                      <!--  <ImageView
                             android:id="@+id/imageView_fragment_news"
                             android:layout_width="fill_parent"
                             android:layout_alignParentTop="true"
@@ -88,7 +96,7 @@
                             android:src="@drawable/share"
                             android:scaleType="fitXY"
                             android:layout_marginTop="5dp"
-                            android:layout_height="400dp" />
+                            android:layout_height="400dp" />-->
 
                         <tkhub.project.mscoba.MyClass.Font.FontHedar
                             android:id="@+id/textView_fragment_news_title"

@@ -366,6 +366,7 @@ public class News extends Activity implements Animation.AnimationListener {
         if (shareiconstarus == 0) {
             Intent i = new Intent(News.this, NewsFragment.class);
             Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+            i.putExtra("id",id);
             i.putExtra("iamgeurl", imageurl);
             i.putExtra("title", title);
             i.putExtra("content", content);
