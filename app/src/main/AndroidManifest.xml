@@ -21,6 +21,8 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
         <activity android:name=".Layout.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,14 +33,13 @@
 
 
         <activity
-            android:name=".Layout.News"
-            android:screenOrientation="portrait" />
+            android:name=".Layout.News"   android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Layout.Event"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Layout.NewsFragment"
-            android:screenOrientation="portrait" />
+            android:name=".Layout.NewsFragment"   android:screenOrientation="portrait"/>
         <activity
             android:name=".Layout.EventFragment"
             android:screenOrientation="portrait"

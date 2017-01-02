@@ -14,6 +14,7 @@ import com.android.volley.toolbox.NetworkImageView;
 import java.util.ArrayList;
 
 import tkhub.project.mscoba.Layout.News;
+import tkhub.project.mscoba.MyClass.Font.TextViewFontAwesome;
 import tkhub.project.mscoba.MyClass.Servies.CustomVolleyRequest;
 import tkhub.project.mscoba.R;
 
@@ -50,9 +51,14 @@ public class NewsfragmentAdapter extends RecyclerView.Adapter<NewsfragmentAdapte
         holder.imageLoader.get(item.get(position).image, ImageLoader.getImageListener(holder.imageCover, R.drawable.imagebackground, android.R.drawable.ic_dialog_alert));
         holder.imageCover.setImageUrl(item.get(position).image, holder.imageLoader);
 
-        System.out.println("item.get(position).image"+item.get(position).image);
-
-
+        if(position==0){
+            holder.textrightarrow.setVisibility(View.INVISIBLE);
+        }else if(position==(item.size())-1){
+            holder.textlefttarrow.setVisibility(View.INVISIBLE);
+        }else {
+            holder.textrightarrow.setVisibility(View.VISIBLE);
+            holder.textlefttarrow.setVisibility(View.VISIBLE);
+        }
 
     }
 
@@ -63,19 +69,19 @@ public class NewsfragmentAdapter extends RecyclerView.Adapter<NewsfragmentAdapte
 
     @Override
     public void onClick(View v) {
-
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-
-
         private ImageLoader imageLoader;
         NetworkImageView imageCover;
+        TextViewFontAwesome textrightarrow,textlefttarrow;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             imageCover = (NetworkImageView) itemView.findViewById(R.id.imageView5);
+            textrightarrow=(TextViewFontAwesome)itemView.findViewById(R.id.textView12);
+            textlefttarrow=(TextViewFontAwesome)itemView.findViewById(R.id.textView15);
 
         }
 

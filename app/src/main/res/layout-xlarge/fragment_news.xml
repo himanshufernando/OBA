@@ -79,24 +79,24 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:background="#00FFFFFF">
+
                         <android.support.v7.widget.RecyclerView
                             android:id="@+id/list_news_fragment"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="400dip"
                             android:layout_alignParentTop="true"
                             android:layout_centerHorizontal="true"
-                            android:divider="@color/myash"
                             android:dividerHeight="10dip" />
 
-                      <!--  <ImageView
-                            android:id="@+id/imageView_fragment_news"
-                            android:layout_width="fill_parent"
-                            android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/share"
-                            android:scaleType="fitXY"
-                            android:layout_marginTop="5dp"
-                            android:layout_height="400dp" />-->
+                        <!-- <ImageView
+                             android:id="@+id/imageView_fragment_news"
+                             android:layout_width="fill_parent"
+                             android:layout_alignParentTop="true"
+                             android:layout_centerHorizontal="true"
+                             android:src="@drawable/share"
+                             android:scaleType="fitXY"
+                             android:layout_marginTop="5dp"
+                             android:layout_height="300dp" />-->
 
                         <tkhub.project.mscoba.MyClass.Font.FontHedar
                             android:id="@+id/textView_fragment_news_title"
@@ -105,7 +105,7 @@
 
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
-                            android:layout_below="@+id/imageView_fragment_news"
+                            android:layout_below="@+id/list_news_fragment"
                             android:layout_marginLeft="2dip"
                             android:layout_marginTop="5dip"
                             android:text="Medium Text"
@@ -126,10 +126,10 @@
                             android:layout_marginTop="10dp" />
 
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-
+                        android:layout_height="60dp"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_marginTop="5dp">
@@ -147,7 +147,7 @@
                             android:layout_toEndOf="@+id/relativeLayout4" />
 
                         <RelativeLayout
-                            android:layout_width="80dp"
+                            android:layout_width="60dp"
                             android:layout_height="match_parent"
                             android:layout_alignParentTop="true"
                             android:layout_alignParentLeft="true"
@@ -159,7 +159,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/icon_circle"
                                 android:id="@+id/textView5"
-                                android:textSize="70dp"
+                                android:textSize="55dp"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_centerVertical="true"
                                 android:layout_centerHorizontal="true" />
@@ -171,11 +171,13 @@
                                 android:text="@string/icon_publishdate"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@color/myWhite"
-                                android:textSize="40dp"
+                                android:textSize="30dp"
                                 android:layout_centerVertical="true"
                                 android:layout_centerHorizontal="true" />
                         </RelativeLayout>
                     </RelativeLayout>
+
+
 
                 </LinearLayout>
             </ScrollView>

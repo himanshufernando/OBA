@@ -64,4 +64,6 @@
 
     <string name="FcmPref">tkhub.project.mscoba.fcmref</string>
     <string name="FcmToken">tkhub.project.mscoba.token</string>
+
+    <string name="app_id">197071170655070</string>
 </resources>

@@ -7,35 +7,21 @@
     android:background="#ffffff">
 
 
-
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:layout_width="200dip"
-        android:layout_height="200dip"
-        app:civ_border_color="#ffffff"
-        app:civ_border_width="10dp"
-        app:civ_shadow="true"
-        android:id="@+id/imageView_logo"
-        android:src="@drawable/tkhublogo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dip"
-        />
-
     <tkhub.project.mscoba.MyClass.Font.FontTK
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TKHub"
         android:id="@+id/textView1"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="30dp"
         android:textColor="@color/grey_800"
-        android:textSize="50sp"
+        android:textSize="60sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <tkhub.project.mscoba.MyClass.Font.FontSpalsh
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="© 2016 TKHub"
         android:id="@+id/textView"
         android:layout_alignParentBottom="true"
@@ -49,7 +35,7 @@
         android:textColor="@color/grey_800"
         android:layout_below="@+id/imageView_logo"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_marginTop="40dp"
         android:id="@+id/textView9"
         android:text="www.tkhub.com" />
@@ -60,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView9"
         android:textColor="@color/grey_800"
-        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dip"
         android:id="@+id/textView10" />
@@ -71,20 +57,29 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView10"
         android:textColor="@color/grey_800"
-        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dip"
         android:id="@+id/textView11" />
 
-    <tkhub.project.mscoba.MyClass.Font.FontTK
-        android:text="www.facebook.com/tkhub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ImageView
+        android:id="@+id/imageView9"
         android:layout_below="@+id/textView11"
-        android:layout_marginTop="10dip"
-        android:textColor="@color/grey_800"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:id="@+id/textView4" />
+        android:src="@drawable/facebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="10dp"
+        app:civ_shadow="true"
+        android:id="@+id/imageView_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
