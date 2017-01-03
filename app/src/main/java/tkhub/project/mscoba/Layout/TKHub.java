@@ -33,15 +33,13 @@ public class TKHub extends Activity implements Animation.AnimationListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_tkhub);
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        AppEventsLogger.activateApp(this);
 
 
         imagLogo = (CircularImageView)findViewById(R.id.imageView_logo);
         imagefb=(ImageView)findViewById(R.id.imageView9);
 
 
-        imagLogo.setImageBitmap(decodeSampledBitmapFromResource(getResources(),R.drawable.tkhublogo,200,200));
+        imagLogo.setImageBitmap(decodeSampledBitmapFromResource(getResources(),R.drawable.tkhublogo,100,100));
         final Animation animMovelaypot = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.animationtk);
         animMovelaypot.setAnimationListener(this);
         imagLogo.startAnimation(animMovelaypot);

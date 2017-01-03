@@ -60,6 +60,13 @@ public class NewsfragmentAdapter extends RecyclerView.Adapter<NewsfragmentAdapte
             holder.textlefttarrow.setVisibility(View.VISIBLE);
         }
 
+        if(item.size()==1){
+            holder.textlefttarrow.setVisibility(View.INVISIBLE);
+            holder.textrightarrow.setVisibility(View.INVISIBLE);
+        }else {
+
+        }
+
     }
 
     @Override
