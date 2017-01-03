@@ -39,7 +39,7 @@ public class TKHub extends Activity implements Animation.AnimationListener {
         imagefb=(ImageView)findViewById(R.id.imageView9);
 
 
-        imagLogo.setImageBitmap(decodeSampledBitmapFromResource(getResources(),R.drawable.tkhublogo,100,100));
+        imagLogo.setImageBitmap(decodeSampledBitmapFromResource(getResources(),R.drawable.tkhublogo,256,256));
         final Animation animMovelaypot = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.animationtk);
         animMovelaypot.setAnimationListener(this);
         imagLogo.startAnimation(animMovelaypot);

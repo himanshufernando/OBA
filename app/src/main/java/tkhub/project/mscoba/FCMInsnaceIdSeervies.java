@@ -42,7 +42,7 @@ public class FCMInsnaceIdSeervies extends FirebaseInstanceIdService {
     @Override
     public void onDestroy() {
         super.onDestroy();
-      //  new saveToken().execute();
+        new saveToken().execute();
     }
 
     private class saveToken extends AsyncTask<String, Void, Void> {
@@ -77,37 +77,6 @@ public class FCMInsnaceIdSeervies extends FirebaseInstanceIdService {
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
 
-            try {
-                Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                NotificationCompat.Builder mBuilder =
-                        new NotificationCompat.Builder(FCMInsnaceIdSeervies.this)
-                                .setSmallIcon(R.drawable.notificationlogo)
-                                .setContentTitle("Welcome")
-                                .setAutoCancel(true)
-                                .setSound(defaultSoundUri)
-                                .setContentText("Welcome to Maris Stella OBA");
-
-                Intent resultIntent = new Intent(FCMInsnaceIdSeervies.this, News.class);
-
-
-                TaskStackBuilder stackBuilder = null;
-                PendingIntent resultPendingIntent = null;
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN) {
-                    stackBuilder = TaskStackBuilder.create(FCMInsnaceIdSeervies.this);
-                    stackBuilder.addParentStack(News.class);
-
-                    stackBuilder.addNextIntent(resultIntent);
-                    resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
-                }else {
-                    resultPendingIntent= PendingIntent.getActivity(FCMInsnaceIdSeervies.this, 0, resultIntent, PendingIntent.FLAG_ONE_SHOT);
-                }
-                mBuilder.setContentIntent(resultPendingIntent);
-                NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-                mNotificationManager.notify(0, mBuilder.build());
-
-            }catch (Exception ex){
-
-            }
 
         }
 
