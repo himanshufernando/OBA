@@ -8,11 +8,13 @@ import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import java.sql.SQLOutput;
+import java.util.Map;
 
 import tkhub.project.mscoba.Layout.News;
 import tkhub.project.mscoba.Layout.Splash;
@@ -25,12 +27,22 @@ import tkhub.project.mscoba.Layout.Splash;
 public class FCmMessagingSevies extends FirebaseMessagingService {
 
 
+    private static final String TAG = "kkkkkkkkkk";
+    String key;
+    String value;
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         String titel =remoteMessage.getNotification().getTitle();
         String message =remoteMessage.getNotification().getBody();
-        String dsd =remoteMessage.getNotification().getTag();
+
         Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
+        for (Map.Entry<String, String> entry : remoteMessage.getData().entrySet()) {
+             key = entry.getKey();
+             value = entry.getValue();
+
+        }
+
 
 
 
@@ -41,8 +53,12 @@ public class FCmMessagingSevies extends FirebaseMessagingService {
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)
                         .setContentText(message);
+        Intent resultIntent ;
 
-        Intent resultIntent = new Intent(this, News.class);
+
+
+
+         resultIntent = new Intent(this, News.class);
 
 
         TaskStackBuilder stackBuilder = null;
