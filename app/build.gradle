@@ -33,8 +33,8 @@ android {
         applicationId "tkhub.project.mscoba"
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 7
-        versionName "1.2.3"
+        versionCode 8
+        versionName "1.2.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
