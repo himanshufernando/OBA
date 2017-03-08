@@ -47,7 +47,7 @@ public class Splash extends Activity {
                     Intent i = new Intent(Splash.this, News.class);
                     Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
                     finish();
-                    startActivity(i, bndlanimation);
+                    startActivity(i);
 
                 }
             }, 3500);
